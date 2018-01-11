@@ -22,7 +22,7 @@ g = 9.81;
 
 % Motor tilt angles
 alpha = deg2rad(13.6);
-beta = deg2rad(10);
+% beta = deg2rad(10);
 % alpha = 0.0001;
  beta = 0;
 
@@ -44,3 +44,10 @@ K_R_I = 10*eye(3);
 K_p1 = 10*eye(3);
 k_p2 = 3;
 K_d = diag([5,5,5,2,2,2]);
+
+% gain matrices for Backstepping
+K_P_1 = 3*eye(3);
+K_P_2 = 3*eye(3);
+
+K_R_1 = 3*eye(3);
+K_R_2 = 3*eye(3);
