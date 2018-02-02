@@ -9,9 +9,11 @@
 % m = 0.468;
 % g = 9.81;
 
+% sample time of visual odometry
+Ts = 0.05; 
 
-% _0 : nominal values
-useNominalValues = false;
+% _0 : nominal values with deviation from true values
+useNominalValues = true;
 
 %Ras17
 Ixx = 0.5;
@@ -32,11 +34,11 @@ g_0 = g;
 
 if useNominalValues
     IB_0 = IB*1.07;
-    k_0 = k*1.06;
-    b_0 = b*1.05;
+    k_0 = k*1.16;
+    b_0 = b*1.15;
     L_0 = L*1.02;
     m_0 = m*1.03;
-    g_0 = g*1.04;
+    g_0 = g*0.99;
 end
 
 % Zero moment Mic17
@@ -74,16 +76,18 @@ k_p2 = 6;
 K_d = diag([5,5,5,6,6,6]); %[5,5,5,2,2,2])
 
 % gain matrices for Backstepping
-K_P_1 = 6*eye(3);
-K_P_2 = 6*eye(3);
-K_P_3 = 6*eye(3);
+K_P_1 = 3*eye(3); %15
+K_P_2 = 6*eye(3); %50
+K_P_3 = 6*eye(3); %60
 
-K_R_1 = 3*eye(3);
-K_R_2 = 3*eye(3);
-K_R_3 = eye(4);
+K_R_1 = 6*eye(3); %40
+K_R_2 = 6*eye(3); %100
+K_R_3 = 6*eye(4); %50
 
 % Sliding Mode Control
 lambda = 1;
 lambda_rot = 1;
-eta = 500;
-eta_rot = 100;
+eta = 50;
+eta_rot = 20;
+M = 20; % upper bound of disturbance
+M_rot = 20;
