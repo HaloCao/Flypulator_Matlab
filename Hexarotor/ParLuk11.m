@@ -10,7 +10,10 @@
 % g = 9.81;
 
 % sample time of visual odometry
-Ts = 0.05; 
+Ts = 0.03; 
+T_delay = 0.05;
+
+% SVO: T_delay = 0.3, Ts = 0.03
 
 % _0 : nominal values with deviation from true values
 useNominalValues = true;
@@ -58,17 +61,29 @@ alpha_0 = alpha;
 
 % K gain matrices for [Raj15]
 
-K_P_D = 10*eye(3);
+% K_P_D = 10*eye(3);
+% 
+% K_P_P = 10*eye(3); %20
+% 
+% K_P_I = 10*eye(3);
+% 
+% K_R_D = 10*eye(3);
+% 
+% K_R_P = 20*eye(3); %20
+% 
+% K_R_I = 10*eye(3);
 
-K_P_P = 10*eye(3); %20
+K_P_D = 0.5*eye(3);
 
-K_P_I = 10*eye(3);
+K_P_P = 0.5*eye(3); %20
 
-K_R_D = 10*eye(3);
+K_P_I = 0.5*eye(3);
 
-K_R_P = 20*eye(3); %20
+K_R_D = 0.5*eye(3);
 
-K_R_I = 10*eye(3);
+K_R_P = 0.5*eye(3); %20
+
+K_R_I = 0.5*eye(3);
 
 % gain matrices for [Ras17]
 K_p1 = 10*eye(3);
@@ -87,7 +102,7 @@ K_R_3 = 6*eye(4); %50
 % Sliding Mode Control
 lambda = 1;
 lambda_rot = 1;
-eta = 50;
-eta_rot = 20;
+eta = 2; %50
+eta_rot = 2; %20
 M = 20; % upper bound of disturbance
 M_rot = 20;
