@@ -1,0 +1,69 @@
+% plot x_I,y_I,z_I and roll,pitch,yaw
+% simulate 20s
+% Ts = 0.004
+% disturbance at 10s
+
+%prepare plot
+factor = 0.45;
+width = factor*16;
+height = 0.75*width;
+figure('Units','centimeters',...
+'Position',[10 10 width height],...
+'PaperPositionMode','auto');
+
+% squeeze singleton dimensions
+x_I = squeeze(x_I);
+y_I = squeeze(y_I);
+z_I = squeeze(z_I);
+roll = squeeze(roll);
+pitch = squeeze(pitch);
+yaw = squeeze(yaw);
+
+% choose region
+start = 9;
+m_area = start/Ts:(15.5*1/Ts);
+x_plot = x_I(m_area);
+y_plot = y_I(m_area);
+z_plot = z_I(m_area);
+
+t = -1:Ts:(-1+Ts*(length(m_area)-1));
+
+plot(t,x_plot,'linewidth',factor*2)
+hold on;
+plot(t,y_plot,'linewidth',factor*2)
+plot(t,z_plot,'linewidth',factor*2,'Color',[0.4660    0.6740    0.1880])
+legend({'${^I\!}x$','${^I\!}y$','${^I\!}z$'},'Location','Southeast','Interpreter','latex');
+xlabel('$t$ [s]');
+ylabel('[m]');
+set(findall(gcf,'-property','FontSize'),'FontSize',11)
+ylim([-0.05,1.3])
+yticks([0 0.25 0.5 0.75 1 1.25])
+xlim([-0.25,5.5])
+xticks([0 1 2 3 4 5])
+grid on;
+Plot2LaTeX(gcf,'TexFigures/xyz')
+%print('../../Thesis/figures/IdealCase_xyz_ref.eps','-depsc2')
+
+figure('Units','centimeters',...
+'Position',[10 10 width height],...
+'PaperPositionMode','auto');
+
+roll_plot = roll(m_area);
+pitch_plot = pitch(m_area);
+yaw_plot = yaw(m_area);
+plot(t,roll_plot,'linewidth',factor*2)
+hold on;
+plot(t,pitch_plot,'linewidth',factor*2)
+plot(t,yaw_plot,'linewidth',factor*2,'Color',[0.4660    0.6740    0.1880])
+legend({'$\varphi$','$\theta$','$\psi$'},'Location','Southeast','Interpreter','latex');
+xlabel('$t$ [s]');
+ylabel('$[^\circ]$');
+set(findall(gcf,'-property','FontSize'),'FontSize',11)
+ylim([-0.5,13])
+xlim([-0.25,5.5])
+yticks([0 2.5 5 7.5 10 12.5])
+xticks([0 1 2 3 4 5])
+grid on;
+Plot2LaTeX(gcf,'TexFigures/rpy')
+%print('../../Thesis/figures/IdealCase_rpy_ref.eps','-depsc2')
+
