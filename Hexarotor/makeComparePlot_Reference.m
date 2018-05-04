@@ -55,7 +55,7 @@ yticks([0 0.25 0.5 0.75 1 1.25])
 xlim([-0.2,5])
 grid on;
 Plot2LaTeX(gcf,'TexFigures/xyz')
-%print('../../Thesis/figures/IdealCase_comp_x_refstep.eps','-depsc2')
+print('../../Thesis/figures/IdealCase_comp_x_refstep.eps','-depsc2')
 
 figure('Units','centimeters',...
 'Position',[10 10 width height],...

@@ -29,9 +29,9 @@ useIdealParameters = false;
 % noise values of gaussian noise, ~3sigma
 if useMeasurementNoise
     p_noise = 0.0003; %+- in [m]
-    v_noise = 2*p_noise/Ts; % +- in [m/s]
+    v_noise = sqrt(2)*p_noise/Ts; % +- in [m/s]
     angular_noise = 0.02; % +- in degree
-    omega_noise = 2*angular_noise/Ts * pi/180; % +- in rad/s % 2.5°/s
+    omega_noise = sqrt(2)*angular_noise/Ts * pi/180; % +- in rad/s % 2.5°/s
 else
     p_noise = 0; %+- in [m]
     v_noise = 0; % +- in [m]
@@ -100,21 +100,21 @@ K_R_I = 100*eye(3);
 % K_R_2 = 6*eye(3); %100
 % K_R_3 = 6*eye(4); %50
 
-K_P_1 = 10*eye(3); %15
-K_P_2 = 10*eye(3); %50
-K_P_3 = 20*eye(3); %60
+K_P_1 = 10*eye(3); %15 %10
+K_P_2 = 10*eye(3); %50 %10
+K_P_3 = 10*eye(3); %60 %20
 
-K_R_1 = 6*eye(3); %40
-K_R_2 = 10*eye(3); %100
-K_R_3 = 20*eye(4); %50
+K_R_1 = 10*eye(3); %40 %6
+K_R_2 = 10*eye(3); %100 %10 
+K_R_3 = 10*eye(4); %50 %20
 
 % Sliding Mode Control
-lambda = 8; 
+lambda = 10; 
 lambda_rot = 10; 
-eta = 4; 
-eta_rot = 4;
-M = 15; % upper bound of disturbance %200
-M_rot = 15; 
+eta = 6; %6
+eta_rot = 5;%5
+M = 15; %  %15
+M_rot = 10;  %10
 
 if useIdealParameters
     lambda = 10; 
