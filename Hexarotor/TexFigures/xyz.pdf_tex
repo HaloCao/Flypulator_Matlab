@@ -59,19 +59,17 @@
     \put(0.77573529,0.10073529){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2\end{tabular}}}}%
     \put(0.56985331,0.02573529){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$t$ [s]\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{xyz.pdf}}%
-    \put(0.21470588,0.16887243){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
-    \put(0.21470588,0.26691176){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0.25\end{tabular}}}}%
-    \put(0.21470588,0.3649511){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0.5\end{tabular}}}}%
-    \put(0.21470588,0.46299007){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0.75\end{tabular}}}}%
-    \put(0.21470588,0.56102941){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}1\end{tabular}}}}%
-    \put(0.21470588,0.65906875){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}1.25\end{tabular}}}}%
-    \put(0.05808824,0.43014743){\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}${^I\!}x$ [m]\end{tabular}}}}}%
+    \put(0.21470588,0.17447463){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
+    \put(0.21470588,0.31853235){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}2\end{tabular}}}}%
+    \put(0.21470588,0.46259007){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}4\end{tabular}}}}%
+    \put(0.21470588,0.60664779){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}6\end{tabular}}}}%
+    \put(0.05808824,0.43014743){\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}[mm]\end{tabular}}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{xyz.pdf}}%
-    \put(0.75,0.38272059){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}PID\end{tabular}}}}%
+    \put(0.80882353,0.58860294){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$x$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{xyz.pdf}}%
-    \put(0.75,0.31102941){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}IB\end{tabular}}}}%
+    \put(0.80882353,0.51691176){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$y$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=5]{xyz.pdf}}%
-    \put(0.75,0.23933823){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}ISM\end{tabular}}}}%
+    \put(0.80882353,0.44522059){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$z$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=6]{xyz.pdf}}%
   \end{picture}%
 \endgroup%

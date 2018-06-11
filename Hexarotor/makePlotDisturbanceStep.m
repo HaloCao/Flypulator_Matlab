@@ -28,11 +28,11 @@ z_plot = z_I(m_area);
 
 t = -1:Ts:(-1+Ts*(length(m_area)-1));
 
-plot(t,x_plot,'linewidth',factor*2)
+plot(t,x_plot,'linewidth',factor*2,'Color', [0.8500    0.3250    0.0980])
 hold on;
-plot(t,y_plot,'linewidth',factor*2)
-plot(t,z_plot,'linewidth',factor*2,'Color',[0.4660    0.6740    0.1880])
-legend({'${^I\!}x$','${^I\!}y$','${^I\!}z$'},'Location','NorthEast','Interpreter','latex');
+plot(t,y_plot,'linewidth',factor*2,'Color',[0.4660    0.6740    0.1880])
+plot(t,z_plot,'linewidth',factor*2,'Color',[0    0.4470    0.7410])
+legend({'$x$','$y$','$z$'},'Location','NorthEast','Interpreter','latex');
 xlabel('$t$ [s]');
 ylabel('[mm]');
 set(findall(gcf,'-property','FontSize'),'FontSize',11)
@@ -49,10 +49,10 @@ figure('Units','centimeters',...
 roll_plot = roll(m_area);
 pitch_plot = pitch(m_area);
 yaw_plot = yaw(m_area);
-plot(t,roll_plot,'linewidth',factor*2)
+plot(t,roll_plot,'linewidth',factor*2,'Color', [0.8500    0.3250    0.0980])
 hold on;
-plot(t,pitch_plot,'linewidth',factor*2)
-plot(t,yaw_plot,'linewidth',factor*2,'Color',[0.4660    0.6740    0.1880])
+plot(t,pitch_plot,'linewidth',factor*2,'Color',[0.4660    0.6740    0.1880])
+plot(t,yaw_plot,'linewidth',factor*2,'Color',[0    0.4470    0.7410])
 legend({'$\varphi$','$\theta$','$\psi$'},'Location','NorthEast','Interpreter','latex');
 xlabel('$t$ [s]');
 ylabel('$[^\circ]$');
