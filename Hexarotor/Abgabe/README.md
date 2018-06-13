@@ -1,7 +1,7 @@
 # Matlab/Simulink Hexarotor Simulation
 
 ## Files
-
+- /simulation_data: .mat and .csv files of Matlab and Gazebo simulation and scripts to create plots.
 - `HexrotorDynamicModel.mdl`: Simulink Model of Hexarotor, including Controllers and Trajectory Generators. Requires previous execution of `IdealParameter.m`, `viveParameter.m` or `VOParameter.m`.
 - `IdealParameter.m`: Script to set up model parameters, uncertainty parameters and controller gains for simulation. Assumes no uncertainties and *no errors* in state estimation.
 - `viveParameter.m`: Script to set up model parameters, uncertainty parameters and controller gains for simulation. Assumes parameter uncertanties and errors of *VIVE state estimation*.
