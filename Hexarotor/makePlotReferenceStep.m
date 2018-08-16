@@ -34,7 +34,7 @@ plot(t,y_plot,'linewidth',factor*2, 'Color',[0.4660    0.6740    0.1880])
 plot(t,z_plot,'linewidth',factor*2,'Color',[0    0.4470    0.7410])
 x_ref = (t<0)*0 + (t>0)*1;
 y_ref = (t<0)*0 + (t>0)*0.75;
-z_ref = (t<0)*0 + (t>0)*0;
+z_ref = (t<0)*0 + (t>0)*0,5;
 plot(t,x_ref,'-.','linewidth',factor*2,'Color', [0.8500    0.3250    0.0980])
 plot(t,y_ref,'-.','linewidth',factor*2, 'Color',[0.4660    0.6740    0.1880])
 plot(t,z_ref,'-.','linewidth',factor*2,'Color',[0    0.4470    0.7410])
