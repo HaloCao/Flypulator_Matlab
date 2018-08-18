@@ -4,7 +4,7 @@
 % disturbance at 10s
 
 %prepare plot
-factor = 0.45;
+factor = 0.5;
 width = factor*16;
 height = 0.75*width;
 figure('Units','centimeters',...

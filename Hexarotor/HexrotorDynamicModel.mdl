@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.479"
+    ComputedModelVersion    "1.485"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -123,7 +123,7 @@ Model {
       $ObjectID		      2
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [1024.0, 39.0, 1920.0, 1049.0]
+      Location		      [1024.0, 43.0, 1920.0, 1045.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		3
@@ -140,59 +140,20 @@ Model {
 	$ClassName		"Simulink.ExplorerBarInfo"
 	Visible			[1]
       }
-      Array {
-	Type			"Simulink.EditorInfo"
-	Dimension		5
-	Object {
-	  $ObjectID		  5
-	  IsActive		  [0]
-	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "694"
-	  Extents		  [1195.0, 1080.0]
-	  ZoomFactor		  [3.0]
-	  Offset		  [1055.161906740773, 919.40476190475374]
-	}
-	Object {
-	  $ObjectID		  6
-	  IsActive		  [0]
-	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "287"
-	  Extents		  [1195.0, 1080.0]
-	  ZoomFactor		  [0.8]
-	  Offset		  [-83.850000000001955, -31.600000000000477]
-	}
-	Object {
-	  $ObjectID		  7
-	  IsActive		  [0]
-	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "468"
-	  Extents		  [1195.0, 1080.0]
-	  ZoomFactor		  [1.0]
-	  Offset		  [1257.6351544449199, 96.63655710781336]
-	}
-	Object {
-	  $ObjectID		  8
-	  IsActive		  [1]
-	  ViewObjType		  "SimulinkTopLevel"
-	  LoadSaveID		  "0"
-	  Extents		  [1882.0, 864.0]
-	  ZoomFactor		  [0.6]
-	  Offset		  [-1120.6975226111865, -920.54506785754756]
-	}
-	Object {
-	  $ObjectID		  9
-	  IsActive		  [0]
-	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "838"
-	  Extents		  [1195.0, 1080.0]
-	  ZoomFactor		  [0.8]
-	  Offset		  [372.18593749999968, -95.383333333333326]
-	}
-	PropName		"EditorsInfo"
+      Object {
+	$PropName		"EditorsInfo"
+	$ObjectID		5
+	$ClassName		"Simulink.EditorInfo"
+	IsActive		[1]
+	ViewObjType		"SimulinkTopLevel"
+	LoadSaveID		"0"
+	Extents			[1882.0, 862.0]
+	ZoomFactor		[1.0]
+	Offset			[-732.6116762203992, -715.61793298222915]
       }
       Object {
 	$PropName		"DockComponentsInfo"
-	$ObjectID		10
+	$ObjectID		6
 	$ClassName		"Simulink.DockComponentInfo"
 	Type			"GLUE2:PropertyInspector"
 	ID			"Property Inspector"
@@ -208,7 +169,7 @@ Model {
       "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0Ac"
       "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAABiAP///wAAAAEAAAAAAAAAAPwCA"
       "AAAAfsAAABUAEcATABVAEUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZ"
-      "QBjAHQAbwByAAAAAAD/////AAAALAD///8AAAeAAAADpAAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
+      "QBjAHQAbwByAAAAAAD/////AAAALAD///8AAAeAAAADogAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
       "////wEAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/"
       "////wEAAACA/////wAAAAAAAAAA/////wEAAADo/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAFo/////wAAAAAAAAAA/"
       "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAOH/////wAAAAAAAAAA/"
@@ -222,9 +183,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "chao"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Fri Aug 17 20:47:14 2018"
-  RTWModifiedTimeStamp	  456438993
-  ModelVersionFormat	  "1.%<AutoIncrement:479>"
+  LastModifiedDate	  "Sat Aug 18 18:07:08 2018"
+  RTWModifiedTimeStamp	  456515570
+  ModelVersionFormat	  "1.%<AutoIncrement:485>"
   SampleTimeColors	  on
   SampleTimeAnnotations	  on
   LibraryLinkDisplay	  "disabled"
@@ -274,7 +235,7 @@ Model {
   TryForcingSFcnDF	  off
   Object {
     $PropName		    "DataLoggingOverride"
-    $ObjectID		    11
+    $ObjectID		    7
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
     model_		    "HexrotorDynamicModel"
     overrideMode_	    [0.0]
@@ -319,7 +280,7 @@ Model {
     Type		    "Handle"
     Dimension		    1
     Simulink.ConfigSet {
-      $ObjectID		      12
+      $ObjectID		      8
       Version		      "1.17.1"
       DisabledProps	      []
       Description	      ""
@@ -327,7 +288,7 @@ Model {
 	Type			"Handle"
 	Dimension		9
 	Simulink.SolverCC {
-	  $ObjectID		  13
+	  $ObjectID		  9
 	  Version		  "1.17.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -366,7 +327,7 @@ Model {
 	  DecoupledContinuousIntegration off
 	}
 	Simulink.DataIOCC {
-	  $ObjectID		  14
+	  $ObjectID		  10
 	  Version		  "1.17.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -407,7 +368,7 @@ Model {
 	  LoggingIntervals	  "[-inf, inf]"
 	}
 	Simulink.OptimizationCC {
-	  $ObjectID		  15
+	  $ObjectID		  11
 	  Version		  "1.17.1"
 	  Array {
 	    Type		    "Cell"
@@ -469,7 +430,7 @@ Model {
 	  DifferentSizesBufferReuse off
 	}
 	Simulink.DebuggingCC {
-	  $ObjectID		  16
+	  $ObjectID		  12
 	  Version		  "1.17.1"
 	  Array {
 	    Type		    "Cell"
@@ -584,7 +545,7 @@ Model {
 	  UnitDatabase		  ""
 	}
 	Simulink.HardwareCC {
-	  $ObjectID		  17
+	  $ObjectID		  13
 	  Version		  "1.17.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -632,7 +593,7 @@ Model {
 	  UseSimulinkCoderFeatures on
 	}
 	Simulink.ModelReferenceCC {
-	  $ObjectID		  18
+	  $ObjectID		  14
 	  Version		  "1.17.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -651,7 +612,7 @@ Model {
 	  SupportModelReferenceSimTargetCustomCode off
 	}
 	Simulink.SFSimCC {
-	  $ObjectID		  19
+	  $ObjectID		  15
 	  Version		  "1.17.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -681,7 +642,7 @@ Model {
 	}
 	Simulink.RTWCC {
 	  $BackupClass		  "Simulink.RTWCC"
-	  $ObjectID		  20
+	  $ObjectID		  16
 	  Version		  "1.17.1"
 	  Array {
 	    Type		    "Cell"
@@ -765,7 +726,7 @@ Model {
 	    Type		    "Handle"
 	    Dimension		    2
 	    Simulink.CodeAppCC {
-	      $ObjectID		      21
+	      $ObjectID		      17
 	      Version		      "1.17.1"
 	      Array {
 		Type			"Cell"
@@ -851,7 +812,7 @@ Model {
 	    }
 	    Simulink.GRTTargetCC {
 	      $BackupClass	      "Simulink.TargetCC"
-	      $ObjectID		      22
+	      $ObjectID		      18
 	      Version		      "1.17.1"
 	      Array {
 		Type			"Cell"
@@ -949,7 +910,7 @@ Model {
 	  }
 	}
 	SlCovCC.ConfigComp {
-	  $ObjectID		  23
+	  $ObjectID		  19
 	  Version		  "1.17.1"
 	  DisabledProps		  []
 	  Description		  "Simulink Coverage Configuration Component"
@@ -999,11 +960,11 @@ Model {
   }
   Simulink.ConfigSet {
     $PropName		    "ActiveConfigurationSet"
-    $ObjectID		    12
+    $ObjectID		    8
   }
   Object {
     $PropName		    "DataTransfer"
-    $ObjectID		    24
+    $ObjectID		    20
     $ClassName		    "Simulink.GlobalDataTransfer"
     DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
     DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
@@ -1395,7 +1356,7 @@ Model {
   }
   System {
     Name		    "HexrotorDynamicModel"
-    Location		    [1024, 39, 2944, 1088]
+    Location		    [1024, 43, 2944, 1088]
     Open		    on
     PortBlocksUseCompactNotation off
     ModelBrowserVisibility  off
@@ -1408,9 +1369,9 @@ Model {
     TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "60"
+    ZoomFactor		    "100"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "1058"
+    SIDHighWatermark	    "1059"
     Block {
       BlockType		      SubSystem
       Name		      "Backstepping1"
@@ -5400,8 +5361,8 @@ Model {
       }
       System {
 	Name			"Feedback Linearization Control [Raj15]"
-	Location		[1024, 39, 2944, 1088]
-	Open			on
+	Location		[1024, 43, 2944, 1088]
+	Open			off
 	PortBlocksUseCompactNotation off
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
@@ -9267,8 +9228,8 @@ Model {
       }
       System {
 	Name			"Integral Backstepping"
-	Location		[1024, 39, 2944, 1088]
-	Open			on
+	Location		[1024, 43, 2944, 1088]
+	Open			off
 	PortBlocksUseCompactNotation off
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
@@ -9280,7 +9241,7 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"100"
+	ZoomFactor		"80"
 	Block {
 	  BlockType		  Inport
 	  Name			  "p_I"
@@ -12640,8 +12601,8 @@ Model {
       Variant		      off
       System {
 	Name			"Integral Backstepping Continous\n"
-	Location		[1024, 39, 2944, 1088]
-	Open			on
+	Location		[1024, 41, 2944, 1088]
+	Open			off
 	PortBlocksUseCompactNotation off
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
@@ -20803,8 +20764,8 @@ Model {
       }
       System {
 	Name			"Sliding Mode Control"
-	Location		[1024, 39, 2944, 1088]
-	Open			on
+	Location		[1024, 41, 2944, 1088]
+	Open			off
 	PortBlocksUseCompactNotation off
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
@@ -30743,18 +30704,9 @@ Model {
 	}
 	Branch {
 	  ZOrder		  4194
-	  Points		  [180, 0]
-	  Branch {
-	    ZOrder		    4472
-	    DstBlock		    "Demux1"
-	    DstPort		    1
-	  }
-	  Branch {
-	    ZOrder		    4471
-	    Points		    [0, 190]
-	    DstBlock		    "Product5"
-	    DstPort		    2
-	  }
+	  Points		  [180, 0; 0, 190]
+	  DstBlock		  "Product5"
+	  DstPort		  2
 	}
       }
       Branch {
@@ -31235,20 +31187,12 @@ Model {
       SrcBlock		      "MATLAB Function4"
       SrcPort		      1
       Points		      [35, 0]
-      Branch {
-	ZOrder			4469
-	DstBlock		"Demux2"
-	DstPort			1
-      }
-      Branch {
-	ZOrder			4468
-	DstBlock		"Sum3"
-	DstPort			1
-      }
+      DstBlock		      "Sum3"
+      DstPort		      1
     }
     Line {
       Name		      "u"
-      ZOrder		      4559
+      ZOrder		      4569
       Labels		      [0, 0]
       SrcBlock		      "Integral Backstepping"
       SrcPort		      1
@@ -31257,20 +31201,37 @@ Model {
       DstPort		      1
     }
     Line {
-      ZOrder		      4563
-      SrcBlock		      "Step3"
+      ZOrder		      4571
+      SrcBlock		      "Mux"
       SrcPort		      1
-      Points		      [12, 0; 0, 240]
-      DstBlock		      "Motion Equations, p_I"
-      DstPort		      4
+      Points		      [9, 0; 0, 117; -28, 0; 0, 228; 2, 0]
+      Branch {
+	ZOrder			4573
+	Points			[0, 40]
+	DstBlock		"Motion Equations, p_I"
+	DstPort			4
+      }
+      Branch {
+	ZOrder			4572
+	DstBlock		"Motion Equations, p_I"
+	DstPort			3
+      }
     }
     Line {
-      ZOrder		      4564
-      SrcBlock		      "Step1"
+      ZOrder		      4574
+      SrcBlock		      "Sum"
       SrcPort		      1
-      Points		      [58, 0; 0, 255]
-      DstBlock		      "Motion Equations, p_I"
-      DstPort		      3
+      Points		      [72, 0; 0, -30]
+      DstBlock		      "Demux1"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      4575
+      SrcBlock		      "Sum3"
+      SrcPort		      1
+      Points		      [30, 0; 0, -50]
+      DstBlock		      "Demux2"
+      DstPort		      1
     }
     Annotation {
       SID		      "921"
@@ -33517,6 +33478,9 @@ Stateflow {
     screen		    [1 1 3600 1200 1.180555555555556]
     treeNode		    [0 117 0 0]
     viewObj		    116
+    visible		    1
+    subviewS {
+    }
     ssIdHighWaterMark	    12
     decomposition	    CLUSTER_CHART
     type		    EML_CHART
@@ -33544,34 +33508,32 @@ Stateflow {
     eml {
       isEML		      1
       script		      "function [p_d, p_d_dot, p_d_dotdot, R_d, omega_d, omega_d_dot, T_D, T_D_dot] = createTrajectory(t"
-      ")\n\n% if t < 10\n%     %zeros\n%     % \n%     p_d = [0;0;0];\n%     p_d_dot = [0;0;0];\n%     p_d_dotdot = [0;"
-      "0;0];\n%     R_d = eye(3);\n%     omega_d = [0;0;0];\n%     omega_d_dot = [0;0;0];\n%     T_D = zeros(6,1);\n%  "
-      "   T_D_dot = zeros(6,1);\n% \n% else\n%     p_d = [1;0.75;0.5];\n%     p_d_dot = [0;0;0];\n%     p_d_dotdot = [0"
-      ";0;0];\n%     \n%     ct = cosd(10); % roll\n%     st = sind(10);\n%     ct2 = cosd(7.5); % pitch\n%     st2 = s"
-      "ind(7.5);\n%     ct3 = cosd(15); % yaw\n%     st3 = sind(15);\n%     R_d = [ct3, -st3, 0; \n%             st3, c"
-      "t3, 0;\n%             0, 0, 1]*[ct2, 0, st2; \n%             0, 1, 0;\n%             -st2, 0, ct2]*[1 0 0;\n%   "
-      "          0 ct, -st; \n%            0 st, ct];\n%     omega_d = [0;0;0];\n%     omega_d_dot = [0;0;0];\n%     T_"
-      "D = zeros(6,1);\n%     T_D_dot = zeros(6,1);\n%     \n% %     \n% %         t = t-10;\n% %     xa = 0;\n% %     "
-      "xe = 1;\n% %     te = 5;\n% %     x = xa + 10*(xe-xa)*t^3/te^3 - 15*(xe-xa)*t^4/te^4 + 6*(xe-xa)*t^5/te^5;\n% % "
-      "    x_dot = 3*10*(xe-xa)*t^2/te^3 - 4*15*(xe-xa)*t^3/te^4 + 5*6*(xe-xa)*t^4/te^5;\n% %     x_dot_dot = 6*10*(xe-"
-      "xa)*t/te^3 - 12*15*(xe-xa)*t^2/te^4 + 20*6*(xe-xa)*t^3/te^5;\n% %     if (t> te)\n% %         x = xe;\n% %      "
-      "   x_dot = 0;\n% %         x_dot_dot = 0;\n% %     end\n% %     p_d = [x;0;x];\n% %     p_d_dot = [x_dot;0;x_dot"
-      "];\n% %     p_d_dotdot = [x_dot_dot;0;x_dot_dot];\n% %     \n% %     xe = 0.5;\n% %     x = xa + 10*(xe-xa)*t^3/"
-      "te^3 - 15*(xe-xa)*t^4/te^4 + 6*(xe-xa)*t^5/te^5;\n% %     x_dot = 3*10*(xe-xa)*t^2/te^3 - 4*15*(xe-xa)*t^3/te^4 "
-      "+ 5*6*(xe-xa)*t^4/te^5;\n% %     x_dot_dot = 6*10*(xe-xa)*t/te^3 - 12*15*(xe-xa)*t^2/te^4 + 20*6*(xe-xa)*t^3/te^"
-      "5;\n% %     if (t> te)\n% %         x = xe;\n% %         x_dot = 0;\n% %         x_dot_dot = 0;\n% %     end\n% "
-      "%     p_d(3) = x;\n% %     p_d_dot(3) = x_dot;\n% %     p_d_dotdot(3) = x_dot_dot;\n% %     \n% %     a = 2*pi/t"
-      "e;\n% %     ct = cos(a*t);\n% %     st = sin(a*t);\n% %     \n% %     R_d = [ct, -st, 0; \n% %            st, ct"
-      ", 0;\n% %            0 0 1];\n% %     R_d_dot = [-a*st, -a*ct, 0;\n% %                 a*ct, -a*st, 0;\n% %     "
-      "            0 0 0];\n% %     R_d_dotdot = [-a*a*ct, a*a*st, 0;\n% %                    -a*a*st, -a*a*ct, 0;\n% %"
-      "                    0 0 0];\n% %                \n% %     T_d_tilde = [R_d', -R_d'*p_d; 0,0,0,1]*[R_d_dot p_d_do"
-      "t; 0,0,0,0];\n% %     \n% %     omega_d = skew2vec(T_d_tilde(1:3,1:3));\n% %     \n% %     T_d_tilde_dot = [R_d_"
-      "dot'*R_d_dot+R_d'*R_d_dotdot, R_d_dot'*p_d_dot+R_d'*p_d_dotdot;\n% %         0,0,0,0];\n% %     \n% %     omega_"
-      "d_dot = skew2vec(T_d_tilde_dot(1:3,1:3));\n% %     \n% %     T_D = [omega_d; T_d_tilde(1:3,4)];\n% %     T_D_dot"
-      " = [omega_d_dot; T_d_tilde_dot(1:3,4)];\n% %     \n% %     if t>te\n% %         R_d = eye(3);\n% %         omega"
-      "_d = [0;0;0];\n% %         omega_d_dot = [0;0;0];\n% %         T_D = zeros(6,1);\n% %         T_D_dot = zeros(6,"
-      "1);\n% %     end\n% end\n\n    p_d = [0;0;0];\n    p_d_dot = [0;0;0];\n    p_d_dotdot = [0;0;0];\n    R_d = eye("
-      "3);\n    omega_d = [0;0;0];\n    omega_d_dot = [0;0;0];\n    T_D = zeros(6,1);\n    T_D_dot = zeros(6,1);\n\n"
+      ")\n\nif t < 10\n    %zeros\n    % \n    p_d = [0;0;0];\n    p_d_dot = [0;0;0];\n    p_d_dotdot = [0;0;0];\n    R"
+      "_d = eye(3);\n    omega_d = [0;0;0];\n    omega_d_dot = [0;0;0];\n    T_D = zeros(6,1);\n    T_D_dot = zeros(6,1"
+      ");\n\nelse\n%     p_d = [1;0.75;0.5];\n%     p_d_dot = [0;0;0];\n%     p_d_dotdot = [0;0;0];\n%     \n%     ct ="
+      " cosd(10); % roll\n%     st = sind(10);\n%     ct2 = cosd(7.5); % pitch\n%     st2 = sind(7.5);\n%     ct3 = cos"
+      "d(15); % yaw\n%     st3 = sind(15);\n%     R_d = [ct3, -st3, 0; \n%             st3, ct3, 0;\n%             0, 0"
+      ", 1]*[ct2, 0, st2; \n%             0, 1, 0;\n%             -st2, 0, ct2]*[1 0 0;\n%             0 ct, -st; \n%  "
+      "          0 st, ct];\n%     omega_d = [0;0;0];\n%     omega_d_dot = [0;0;0];\n%     T_D = zeros(6,1);\n%     T_D"
+      "_dot = zeros(6,1);\n%     \n    \n        t = t-10;\n    xa = 0;\n    xe = 1;\n    te = 5;\n    x = xa + 10*(xe-"
+      "xa)*t^3/te^3 - 15*(xe-xa)*t^4/te^4 + 6*(xe-xa)*t^5/te^5;\n    x_dot = 3*10*(xe-xa)*t^2/te^3 - 4*15*(xe-xa)*t^3/t"
+      "e^4 + 5*6*(xe-xa)*t^4/te^5;\n    x_dot_dot = 6*10*(xe-xa)*t/te^3 - 12*15*(xe-xa)*t^2/te^4 + 20*6*(xe-xa)*t^3/te^"
+      "5;\n    if (t> te)\n        x = xe;\n        x_dot = 0;\n        x_dot_dot = 0;\n    end\n    p_d = [x;0;x];\n  "
+      "  p_d_dot = [x_dot;0;x_dot];\n    p_d_dotdot = [x_dot_dot;0;x_dot_dot];\n    \n    xe = 0.5;\n    x = xa + 10*(x"
+      "e-xa)*t^3/te^3 - 15*(xe-xa)*t^4/te^4 + 6*(xe-xa)*t^5/te^5;\n    x_dot = 3*10*(xe-xa)*t^2/te^3 - 4*15*(xe-xa)*t^3"
+      "/te^4 + 5*6*(xe-xa)*t^4/te^5;\n    x_dot_dot = 6*10*(xe-xa)*t/te^3 - 12*15*(xe-xa)*t^2/te^4 + 20*6*(xe-xa)*t^3/t"
+      "e^5;\n    if (t> te)\n        x = xe;\n        x_dot = 0;\n        x_dot_dot = 0;\n    end\n    p_d(3) = x;\n   "
+      " p_d_dot(3) = x_dot;\n    p_d_dotdot(3) = x_dot_dot;\n    \n    a = 2*pi/te;\n    ct = cos(a*t);\n    st = sin(a"
+      "*t);\n    \n    R_d = [ct, -st, 0; \n           st, ct, 0;\n           0 0 1];\n    R_d_dot = [-a*st, -a*ct, 0;\n"
+      "                a*ct, -a*st, 0;\n                0 0 0];\n    R_d_dotdot = [-a*a*ct, a*a*st, 0;\n               "
+      "    -a*a*st, -a*a*ct, 0;\n                   0 0 0];\n               \n    T_d_tilde = [R_d', -R_d'*p_d; 0,0,0,1"
+      "]*[R_d_dot p_d_dot; 0,0,0,0];\n    \n    omega_d = skew2vec(T_d_tilde(1:3,1:3));\n    \n    T_d_tilde_dot = [R_d"
+      "_dot'*R_d_dot+R_d'*R_d_dotdot, R_d_dot'*p_d_dot+R_d'*p_d_dotdot;\n        0,0,0,0];\n    \n    omega_d_dot = ske"
+      "w2vec(T_d_tilde_dot(1:3,1:3));\n    \n    T_D = [omega_d; T_d_tilde(1:3,4)];\n    T_D_dot = [omega_d_dot; T_d_ti"
+      "lde_dot(1:3,4)];\n    \n    if t>te\n        R_d = eye(3);\n        omega_d = [0;0;0];\n        omega_d_dot = [0"
+      ";0;0];\n        T_D = zeros(6,1);\n        T_D_dot = zeros(6,1);\n    end\nend\n\n%     p_d = [0;0;0];\n%     p_"
+      "d_dot = [0;0;0];\n%     p_d_dotdot = [0;0;0];\n%     R_d = eye(3);\n%     omega_d = [0;0;0];\n%     omega_d_dot "
+      "= [0;0;0];\n%     T_D = zeros(6,1);\n%     T_D_dot = zeros(6,1);\n\n"
       editorLayout	      "100 M4x1[10 5 700 500]"
     }
   }

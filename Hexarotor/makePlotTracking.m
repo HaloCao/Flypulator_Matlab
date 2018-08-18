@@ -4,7 +4,7 @@
 % disturbance at 10s
 
 %prepare plot
-factor = 0.45;
+factor = 0.5;
 width = factor*16;
 height = 0.75*width;
 figure('Units','centimeters',...
@@ -36,8 +36,8 @@ legend({'$x$','$y$','$z$'},'Location','NorthWest','Interpreter','latex');
 xlabel('$t$ [s]');
 ylabel('[m]');
 set(findall(gcf,'-property','FontSize'),'FontSize',11)
-ylim([-0.05,1.1])
-yticks([0 0.25 0.5 0.75 1])
+% ylim([-0.05,1.1])
+% yticks([0 0.25 0.5 0.75 1])
 xlim([-0.25,5.5])
 xticks([0 1 2 3 4 5])
 grid on;
@@ -45,7 +45,7 @@ Plot2LaTeX(gcf,'TexFigures/xyz')
 %print('../../Thesis/figures/IdealCase_xyz_traj.eps','-depsc2')
 
 figure('Units','centimeters',...
-'Position',[10 10 width height],...
+'Position',[20 10 width height],...
 'PaperPositionMode','auto');
 
 roll_plot = roll(m_area);
@@ -61,7 +61,7 @@ ylabel('$[^\circ]$');
 set(findall(gcf,'-property','FontSize'),'FontSize',11)
 %ylim([0,1.75])
 xlim([-0.25,5.5])
-yticks([-180 -90 0 90 180])
+% yticks([-180 -90 0 90 180])
 xticks([0 1 2 3 4 5])
 grid on;
 Plot2LaTeX(gcf,'TexFigures/rpy')

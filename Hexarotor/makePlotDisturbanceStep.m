@@ -42,8 +42,8 @@ ylabel('[cm]');
 % ylabel('${^I\!}p$./max(${^I\!}p$)');
 set(findall(gcf,'-property','FontSize'),'FontSize',11)
 % ylim([-0.00035,0.0065])
-xlim([-0.2,10])
-% ylim([-0.05,1.1])
+xlim([-0.2,8])
+ylim([-0.4,4])
 % yticks([0 0.2 0.4 0.6 0.8 1])
 % xlim([-0.2,5])
 grid on;
@@ -72,9 +72,9 @@ ylabel('$[^\circ]$');
 set(findall(gcf,'-property','FontSize'),'FontSize',11)
 % ylim([-0.01,0.2])
 % xlim([-0.2,2.5])
-% ylim([-0.05,1.1])
+ylim([-0.4,6])
 % yticks([0 0.2 0.4 0.6 0.8 1])
-xlim([-0.2 10])
+xlim([-0.2 8])
 grid on;
 Plot2LaTeX(gcf,'TexFigures/rpy')
 %print('../../Thesis/figures/IdealCase_rpy_dist.eps','-depsc2')
