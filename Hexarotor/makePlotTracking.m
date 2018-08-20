@@ -22,9 +22,9 @@ yaw = squeeze(yaw);
 % choose region
 start = 9;
 m_area = start/Ts:(15.5*1/Ts);
-x_plot = x_I(m_area);
-y_plot = y_I(m_area);
-z_plot = z_I(m_area);
+x_plot = x_I(m_area)*100;
+y_plot = y_I(m_area)*100;
+z_plot = z_I(m_area)*100;
 
 t = -1:Ts:(-1+Ts*(length(m_area)-1));
 
@@ -32,11 +32,11 @@ plot(t,x_plot,'linewidth',factor*2,'Color', [0.8500    0.3250    0.0980])
 hold on;
 plot(t,y_plot,'linewidth',factor*2,'Color',[0.4660    0.6740    0.1880])
 plot(t,z_plot,'linewidth',factor*2,'Color',[0    0.4470    0.7410])
-legend({'$x$','$y$','$z$'},'Location','NorthWest','Interpreter','latex');
+legend({'$e_x$','$e_y$','$e_z$'},'Location','NorthWest','Interpreter','latex');
 xlabel('$t$ [s]');
-ylabel('[m]');
+ylabel('[cm]');
 set(findall(gcf,'-property','FontSize'),'FontSize',11)
-% ylim([-0.05,1.1])
+% ylim([-0.3,0.5])
 % yticks([0 0.25 0.5 0.75 1])
 xlim([-0.25,5.5])
 xticks([0 1 2 3 4 5])
@@ -55,11 +55,11 @@ plot(t,roll_plot,'linewidth',factor*2,'Color', [0.8500    0.3250    0.0980])
 hold on;
 plot(t,pitch_plot,'linewidth',factor*2,'Color',[0.4660    0.6740    0.1880])
 plot(t,yaw_plot,'linewidth',factor*2,'Color',[0    0.4470    0.7410])
-legend({'$\varphi$','$\theta$','$\psi$'},'Location','NorthEast','Interpreter','latex');
+legend({'$e_{\varphi}$','$e_{\theta}$','$e_{\psi}$'},'Location','NorthEast','Interpreter','latex');
 xlabel('$t$ [s]');
 ylabel('$[^\circ]$');
 set(findall(gcf,'-property','FontSize'),'FontSize',11)
-%ylim([0,1.75])
+% ylim([-1 1.5])
 xlim([-0.25,5.5])
 % yticks([-180 -90 0 90 180])
 xticks([0 1 2 3 4 5])
