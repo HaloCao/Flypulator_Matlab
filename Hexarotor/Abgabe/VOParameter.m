@@ -29,9 +29,9 @@ else
 end
 
 % Inertia
-Ixx = 0.5;
-Iyy = Ixx;
-Izz = 2;
+Ixx = 0.122;
+Iyy = 0.123;
+Izz = 0.235;
 IB = [Ixx 0 0; 0 Iyy 0; 0 0 Izz];
 IB_0 = IB;
 % rotor constants
@@ -42,7 +42,7 @@ b_0 = b;
 % drone radius
 L = 0.4;
 L_0 = L;
-m = 2.5; % mass
+m = 4.85; % mass
 m_0 = m;
 g = 9.81; % gravity
 g_0 = g;
@@ -60,7 +60,7 @@ end
 % Motor tilt angles
 alpha = pi/180 * 13.6;
 alpha_0 = alpha*1.08;
-beta = 0;
+beta = pi/180 * 10.6;
 beta_0 = beta;
 
 % K gain matrices for [Raj15] (PID)
