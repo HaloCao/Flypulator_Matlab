@@ -122,8 +122,8 @@ K_R_3 = 50*eye(4);
 % Sliding Mode Control
 lambda = 5; 
 lambda_rot = 10;
-eta = 20;  
+eta = 40;  
 eta_rot = 20; 
-M = 20; 
+M = 100; 
 M_rot = 15; 
 
