@@ -1,12 +1,12 @@
 Model {
-  Name			  "pose_ctrl"
-  Version		  9.2
+  Name			  "pose_ctrl_R2017b"
+  Version		  9.0
   SavedCharacterEncoding  "UTF-8"
   GraphicalInterface {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.484"
+    ComputedModelVersion    "1.485"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -14,76 +14,73 @@ Model {
     NumResetEvents	    0
     HasInitializeEvent	    0
     HasTerminateEvent	    0
-    PreCompExecutionDomainType "Unset"
     IsExportFunctionModel   0
     NumParameterArguments   0
     NumExternalFileReferences 10
     ExternalFileReference {
       Reference		      "simulink/Sources/Band-Limited\nWhite Noise"
-      Path		      "pose_ctrl/Band-Limited White Noise"
+      Path		      "pose_ctrl_R2017b/Band-Limited White Noise"
       SID		      "249"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "simulink/Sources/Band-Limited\nWhite Noise"
-      Path		      "pose_ctrl/Band-Limited White Noise1"
+      Path		      "pose_ctrl_R2017b/Band-Limited White Noise1"
       SID		      "251"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "simulink/Sources/Band-Limited\nWhite Noise"
-      Path		      "pose_ctrl/Band-Limited White Noise2"
+      Path		      "pose_ctrl_R2017b/Band-Limited White Noise2"
       SID		      "252"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "simulink/Sources/Band-Limited\nWhite Noise"
-      Path		      "pose_ctrl/Band-Limited White Noise3"
+      Path		      "pose_ctrl_R2017b/Band-Limited White Noise3"
       SID		      "995"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "simulink/Sources/Band-Limited\nWhite Noise"
-      Path		      "pose_ctrl/Band-Limited White Noise4"
+      Path		      "pose_ctrl_R2017b/Band-Limited White Noise4"
       SID		      "997"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "simulink/Sources/Band-Limited\nWhite Noise"
-      Path		      "pose_ctrl/Band-Limited White Noise5"
+      Path		      "pose_ctrl_R2017b/Band-Limited White Noise5"
       SID		      "1002"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "simulink/Sources/Band-Limited\nWhite Noise"
-      Path		      "pose_ctrl/Band-Limited White Noise6"
+      Path		      "pose_ctrl_R2017b/Band-Limited White Noise6"
       SID		      "824"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "vrlib/Utilities/Cross Product"
-      Path		      "pose_ctrl/Feedback Linearization Control [Raj15]/Cross Product"
+      Path		      "pose_ctrl_R2017b/Feedback Linearization Control [Raj15]/Cross Product"
       SID		      "306"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "vrlib/Utilities/Cross Product"
-      Path		      "pose_ctrl/Integral Backstepping/Cross Product1"
+      Path		      "pose_ctrl_R2017b/Integral Backstepping/Cross Product1"
       SID		      "576"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "vrlib/Utilities/Cross Product"
-      Path		      "pose_ctrl/Motion Equations, p_I/Cross Product1"
+      Path		      "pose_ctrl_R2017b/Motion Equations, p_I/Cross Product1"
       SID		      "169"
       Type		      "LIBRARY_BLOCK"
     }
     OrderedModelArguments   1
   }
   LogicAnalyzerPlugin	  "on"
-  WebScopes_FoundationPlugin "on"
   DiagnosticSuppressor	  "on"
-  NotesPlugin		  "on"
   SLCCPlugin		  "on"
   ScopeRefreshTime	  0.035000
   OverrideScopeRefreshTime on
@@ -164,16 +161,15 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "chao"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Thu Jan 24 21:10:30 2019"
-  RTWModifiedTimeStamp	  470264975
-  ModelVersionFormat	  "1.%<AutoIncrement:484>"
+  LastModifiedDate	  "Thu Jan 24 21:11:38 2019"
+  RTWModifiedTimeStamp	  470265098
+  ModelVersionFormat	  "1.%<AutoIncrement:485>"
   SampleTimeColors	  on
   SampleTimeAnnotations	  on
   LibraryLinkDisplay	  "disabled"
   WideLines		  off
   ShowLineDimensions	  off
   ShowPortDataTypes	  off
-  ShowAllPropagatedSignalLabels	off
   PortDataTypeDisplayFormat "AliasTypeOnly"
   ShowEditTimeErrors	  on
   ShowEditTimeWarnings	  on
@@ -188,7 +184,6 @@ Model {
   ShowViewerIcons	  on
   SortedOrder		  off
   VariantCondition	  off
-  ShowSubsystemDomainSpec off
   ExecutionContextIcon	  off
   ShowLinearizationAnnotations on
   ShowVisualizeInsertedRTB on
@@ -202,7 +197,6 @@ Model {
   BrowserShowLibraryLinks off
   FunctionConnectors	  off
   BrowserLookUnderMasks	  off
-  MultiThreadCoSim	  on
   SimulationMode	  "normal"
   VisualizeLoggedSignalsWhenLoggingToFile off
   PauseTimes		  "5"
@@ -210,8 +204,6 @@ Model {
   SnapshotBufferSize	  10
   SnapshotInterval	  10
   NumberOfLastSnapshots	  0
-  EnablePacing		  off
-  PacingRate		  1
   LinearizationMsg	  "none"
   Profile		  off
   ParamWorkspaceSource	  "MATLABWorkspace"
@@ -223,12 +215,12 @@ Model {
     $PropName		    "DataLoggingOverride"
     $ObjectID		    7
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
-    model_		    "pose_ctrl"
+    model_		    "pose_ctrl_R2017b"
     overrideMode_	    [0.0]
     Array {
       Type		      "Cell"
       Dimension		      1
-      Cell		      "pose_ctrl"
+      Cell		      "pose_ctrl_R2017b"
       PropName		      "logAsSpecifiedByModels_"
     }
     Array {
@@ -267,7 +259,7 @@ Model {
     Dimension		    1
     Simulink.ConfigSet {
       $ObjectID		      8
-      Version		      "1.18.1"
+      Version		      "1.17.1"
       DisabledProps	      []
       Description	      ""
       Array {
@@ -275,13 +267,12 @@ Model {
 	Dimension		9
 	Simulink.SolverCC {
 	  $ObjectID		  9
-	  Version		  "1.18.1"
+	  Version		  "1.17.1"
 	  DisabledProps		  []
 	  Description		  ""
 	  StartTime		  "0.0"
 	  StopTime		  "20"
 	  AbsTol		  "auto"
-	  AutoScaleAbsTol	  on
 	  FixedStep		  "0.0005"
 	  InitialStep		  "auto"
 	  MaxOrder		  5
@@ -312,11 +303,10 @@ Model {
 	  InsertRTBMode		  "Whenever possible"
 	  SampleTimeProperty	  []
 	  DecoupledContinuousIntegration off
-	  MinimalZcImpactIntegration off
 	}
 	Simulink.DataIOCC {
 	  $ObjectID		  10
-	  Version		  "1.18.1"
+	  Version		  "1.17.1"
 	  DisabledProps		  []
 	  Description		  ""
 	  Decimation		  "1"
@@ -357,7 +347,7 @@ Model {
 	}
 	Simulink.OptimizationCC {
 	  $ObjectID		  11
-	  Version		  "1.18.1"
+	  Version		  "1.17.1"
 	  Array {
 	    Type		    "Cell"
 	    Dimension		    8
@@ -416,15 +406,10 @@ Model {
 	  OptimizeDataStoreBuffers on
 	  BusAssignmentInplaceUpdate on
 	  DifferentSizesBufferReuse off
-	  OptimizationLevel	  "level2"
-	  OptimizationPriority	  "Balanced"
-	  OptimizationCustomize	  on
-	  UseRowMajorAlgorithm	  off
-	  LabelGuidedReuse	  off
 	}
 	Simulink.DebuggingCC {
 	  $ObjectID		  12
-	  Version		  "1.18.1"
+	  Version		  "1.17.1"
 	  Array {
 	    Type		    "Cell"
 	    Dimension		    1
@@ -436,7 +421,6 @@ Model {
 	  ConsistencyChecking	  "none"
 	  ArrayBoundsChecking	  "none"
 	  SignalInfNanChecking	  "none"
-	  StringTruncationChecking "error"
 	  SignalRangeChecking	  "none"
 	  ReadBeforeWriteMsg	  "UseLocalSettings"
 	  WriteAfterWriteMsg	  "UseLocalSettings"
@@ -507,8 +491,6 @@ Model {
 	  SimStateInterfaceChecksumMismatchMsg "warning"
 	  SimStateOlderReleaseMsg "error"
 	  ChecksumConsistencyForSSReuse	"none"
-	  LibraryContextMissingDiagnostic "warning"
-	  MatchCodeGenerationContextForUpdateDiagram "none"
 	  InitInArrayFormatMsg	  "warning"
 	  StrictBusMsg		  "ErrorLevel1"
 	  BusNameAdapt		  "WarnAndRepair"
@@ -539,11 +521,10 @@ Model {
 	  RCSCObservableMsg	  "warning"
 	  ForceCombineOutputUpdateInSim	off
 	  UnitDatabase		  ""
-	  UnderSpecifiedDimensionMsg "none"
 	}
 	Simulink.HardwareCC {
 	  $ObjectID		  13
-	  Version		  "1.18.1"
+	  Version		  "1.17.1"
 	  DisabledProps		  []
 	  Description		  ""
 	  ProdBitPerChar	  8
@@ -591,7 +572,7 @@ Model {
 	}
 	Simulink.ModelReferenceCC {
 	  $ObjectID		  14
-	  Version		  "1.18.1"
+	  Version		  "1.17.1"
 	  DisabledProps		  []
 	  Description		  ""
 	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
@@ -610,7 +591,7 @@ Model {
 	}
 	Simulink.SFSimCC {
 	  $ObjectID		  15
-	  Version		  "1.18.1"
+	  Version		  "1.17.1"
 	  DisabledProps		  []
 	  Description		  ""
 	  SimCustomSourceCode	  ""
@@ -629,7 +610,6 @@ Model {
 	  SimIntegrity		  on
 	  SimUseLocalCustomCode	  off
 	  SimParseCustomCode	  on
-	  SimAnalyzeCustomCode	  off
 	  SimBuildMode		  "sf_incremental_build"
 	  SimGenImportedTypeDefs  off
 	  ModelFunctionsGlobalVisibility "on"
@@ -637,13 +617,11 @@ Model {
 	  EnableRuntimeRecursion  on
 	  MATLABDynamicMemAlloc	  on
 	  MATLABDynamicMemAllocThreshold 65536
-	  CustomCodeFunctionArrayLayout	[]
-	  DefaultCustomCodeFunctionArrayLayout "NotSpecified"
 	}
 	Simulink.RTWCC {
 	  $BackupClass		  "Simulink.RTWCC"
 	  $ObjectID		  16
-	  Version		  "1.18.1"
+	  Version		  "1.17.1"
 	  Array {
 	    Type		    "Cell"
 	    Dimension		    16
@@ -692,7 +670,6 @@ Model {
 	  CustomSource		  ""
 	  CustomLibrary		  ""
 	  CustomDefine		  ""
-	  CustomBLASCallback	  ""
 	  CustomLAPACKCallback	  ""
 	  CustomFFTCallback	  ""
 	  CustomInitializer	  ""
@@ -707,7 +684,7 @@ Model {
 	  CodeExecutionProfiling  off
 	  CodeExecutionProfileVariable "executionProfile"
 	  CodeProfilingSaveOptions "SummaryOnly"
-	  CodeProfilingInstrumentation "off"
+	  CodeProfilingInstrumentation off
 	  SILDebugging		  off
 	  TargetLang		  "C"
 	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
@@ -730,7 +707,7 @@ Model {
 	    Dimension		    2
 	    Simulink.CodeAppCC {
 	      $ObjectID		      17
-	      Version		      "1.18.1"
+	      Version		      "1.17.1"
 	      Array {
 		Type			"Cell"
 		Dimension		28
@@ -804,7 +781,6 @@ Model {
 	      InsertBlockDesc	      off
 	      InsertPolySpaceComments off
 	      SimulinkBlockComments   on
-	      BlockCommentType	      "BlockPathComment"
 	      StateflowObjectComments off
 	      MATLABSourceComments    off
 	      EnableCustomComments    off
@@ -818,7 +794,7 @@ Model {
 	    Simulink.GRTTargetCC {
 	      $BackupClass	      "Simulink.TargetCC"
 	      $ObjectID		      18
-	      Version		      "1.18.1"
+	      Version		      "1.17.1"
 	      Array {
 		Type			"Cell"
 		Dimension		16
@@ -850,7 +826,6 @@ Model {
 	      UtilityFuncGeneration   "Auto"
 	      MultiwordTypeDef	      "System defined"
 	      MultiwordLength	      2048
-	      DynamicStringBufferSize 256
 	      GenerateFullHeader      on
 	      InferredTypesCompatibility off
 	      ExistingSharedCode      ""
@@ -864,7 +839,6 @@ Model {
 	      GeneratePreprocessorConditionals "Use local settings"
 	      CombineOutputUpdateFcns on
 	      CombineSignalStateStructs	off
-	      GroupInternalDataByFunction off
 	      SuppressErrorStatus     off
 	      IncludeFileDelimiter    "Auto"
 	      ERTCustomFileBanners    off
@@ -873,9 +847,9 @@ Model {
 	      MatFileLogging	      on
 	      MultiInstanceERTCode    off
 	      CodeInterfacePackaging  "Nonreusable function"
-	      PurelyIntegerCode	      off
 	      SupportNonFinite	      on
 	      SupportComplex	      on
+	      PurelyIntegerCode	      off
 	      SupportContinuousTime   on
 	      SupportNonInlinedSFcns  on
 	      RemoveDisableFunc	      off
@@ -883,7 +857,6 @@ Model {
 	      SupportVariableSizeSignals off
 	      ParenthesesLevel	      "Nominal"
 	      CastingMode	      "Nominal"
-	      PreserveStateflowLocalDataDimensions off
 	      MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.GRTCustomization"
 	      ModelStepFunctionPrototypeControlCompliant off
 	      CPPClassGenCompliant    on
@@ -898,11 +871,6 @@ Model {
 	      LookupTableObjectStructAxisOrder "1,2,3,4,..."
 	      LUTObjectStructOrderExplicitValues "Size,Breakpoints,Table"
 	      LUTObjectStructOrderEvenSpacing "Size,Breakpoints,Table"
-	      ArrayLayout	      "Column-major"
-	      UnsupportedSFcnMsg      "error"
-	      ERTHeaderFileRootName   "$R$E"
-	      ERTSourceFileRootName   "$R$E"
-	      ERTDataFileRootName     "$R_data"
 	      UseMalloc		      off
 	      ExtMode		      off
 	      ExtModeStaticAlloc      off
@@ -924,7 +892,7 @@ Model {
 	}
 	SlCovCC.ConfigComp {
 	  $ObjectID		  19
-	  Version		  "1.18.1"
+	  Version		  "1.17.1"
 	  DisabledProps		  []
 	  Description		  "Simulink Coverage Configuration Component"
 	  Name			  "Simulink Coverage"
@@ -1251,7 +1219,6 @@ Model {
       FunctionName	      "system"
       SFunctionModules	      "''"
       PortCounts	      "[]"
-      MultiThreadCoSim	      "auto"
     }
     Block {
       BlockType		      Scope
@@ -1292,7 +1259,6 @@ Model {
       Opaque		      off
       MaskHideContents	      off
       SFBlockType	      "NONE"
-      VariantControlMode      "Expression"
       Variant		      off
       GeneratePreprocessorConditionals off
       AllowZeroVariantControls off
@@ -1300,10 +1266,6 @@ Model {
       TreatAsGroupedWhenPropagatingVariantConditions on
       ContentPreviewEnabled   off
       IsWebBlock	      off
-      IsObserver	      off
-      Latency		      "0"
-      AutoFrameSizeCalculation off
-      IsWebBlockPanel	      off
     }
     Block {
       BlockType		      Sum
@@ -1347,12 +1309,10 @@ Model {
     }
   }
   System {
-    Name		    "pose_ctrl"
+    Name		    "pose_ctrl_R2017b"
     Location		    [0, 0, 1280, 1053]
-    Open		    on
+    Open		    off
     PortBlocksUseCompactNotation off
-    SetExecutionDomain	    off
-    ExecutionDomainType	    "Deduce"
     ModelBrowserVisibility  off
     ModelBrowserWidth	    200
     ScreenColor		    "white"
@@ -1519,8 +1479,6 @@ Model {
 	Location		[62, 1, 1311, 1441]
 	Open			off
 	PortBlocksUseCompactNotation off
-	SetExecutionDomain	off
-	ExecutionDomainType	"Deduce"
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -1605,8 +1563,6 @@ Model {
 	    Location		    [223, 338, 826, 833]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -1640,7 +1596,7 @@ Model {
 	      BlockType		      S-Function
 	      Name		      " SFunction "
 	      SID		      "277::22"
-	      Tag		      "Stateflow S-Function pose_ctrl 19"
+	      Tag		      "Stateflow S-Function pose_ctrl_R2017b 19"
 	      Ports		      [1, 2]
 	      Position		      [180, 100, 230, 160]
 	      ZOrder		      13
@@ -1718,8 +1674,6 @@ Model {
 	    Location		    [223, 338, 826, 833]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -1753,7 +1707,7 @@ Model {
 	      BlockType		      S-Function
 	      Name		      " SFunction "
 	      SID		      "278::22"
-	      Tag		      "Stateflow S-Function pose_ctrl 20"
+	      Tag		      "Stateflow S-Function pose_ctrl_R2017b 20"
 	      Ports		      [1, 2]
 	      Position		      [180, 100, 230, 160]
 	      ZOrder		      13
@@ -1831,8 +1785,6 @@ Model {
 	    Location		    [223, 338, 826, 833]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -1866,7 +1818,7 @@ Model {
 	      BlockType		      S-Function
 	      Name		      " SFunction "
 	      SID		      "1007::22"
-	      Tag		      "Stateflow S-Function pose_ctrl 98"
+	      Tag		      "Stateflow S-Function pose_ctrl_R2017b 98"
 	      Ports		      [1, 2]
 	      Position		      [180, 100, 230, 160]
 	      ZOrder		      13
@@ -1945,8 +1897,6 @@ Model {
 	    Location		    [223, 338, 826, 833]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -1980,7 +1930,7 @@ Model {
 	      BlockType		      S-Function
 	      Name		      " SFunction "
 	      SID		      "1009::22"
-	      Tag		      "Stateflow S-Function pose_ctrl 99"
+	      Tag		      "Stateflow S-Function pose_ctrl_R2017b 99"
 	      Ports		      [1, 2]
 	      Position		      [180, 100, 230, 160]
 	      ZOrder		      13
@@ -2058,8 +2008,6 @@ Model {
 	    Location		    [223, 338, 826, 833]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -2093,7 +2041,7 @@ Model {
 	      BlockType		      S-Function
 	      Name		      " SFunction "
 	      SID		      "1013::22"
-	      Tag		      "Stateflow S-Function pose_ctrl 100"
+	      Tag		      "Stateflow S-Function pose_ctrl_R2017b 100"
 	      Ports		      [1, 2]
 	      Position		      [180, 100, 230, 160]
 	      ZOrder		      13
@@ -2177,7 +2125,7 @@ Model {
 	  "922],'ColorOrder',[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;1 1 0.06666666666666"
 	  "67;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.0745098039215686;0.0588235294117647 "
 	  "1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configuration('Tools','Plot Navigation',true,'OnceAtStop',fals"
-	  "e),extmgr.Configuration('Tools','Measurements',true,'Version','2017b')),'Version','2017b','Position',[1346 154 560 "
+	  "e),extmgr.Configuration('Tools','Measurements',true,'Version','2017b')),'Version','2018b','Position',[1346 154 560 "
 	  "420])"
 	  NumInputPorts		  "1"
 	  Floating		  off
@@ -2212,7 +2160,7 @@ Model {
 	  "sion','2017b','Measurements',struct('traceselector',struct('Line',1),'tcursors',struct('XCoordinates',[0.1996951219"
 	  "5122 0.672377236519268],'YCoordinates',[NaN NaN],'CursorChannels',[1 1],'WaveformCursors',true,'ShowHorizontal',fal"
 	  "se,'ShowVertical',true,'LockCursorSpacing',false,'SnapToData',false,'SettingsPanelOpen',0,'MeasurementsPanelOpen',1"
-	  ")))),'Version','2017b','Position',[63 1 2498 1359])"
+	  ")))),'Version','2018b','Position',[63 1 2498 1359])"
 	  NumInputPorts		  "3"
 	  Floating		  off
 	}
@@ -2454,8 +2402,6 @@ Model {
 	Location		[0, 0, 1280, 1053]
 	Open			off
 	PortBlocksUseCompactNotation off
-	SetExecutionDomain	off
-	ExecutionDomainType	"Deduce"
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -2628,7 +2574,7 @@ Model {
 	  Position		  [525, 252, 560, 288]
 	  ZOrder		  250
 	  InitialCondition	  "[0;0;0]"
-	  InitialConditionSetting "Auto"
+	  InitialConditionSetting "State (most efficient)"
 	  SampleTime		  "Ts"
 	  ICPrevOutput		  "DiscIntNeverNeededParam"
 	  ICPrevScaledInput	  "DiscIntNeverNeededParam"
@@ -2641,7 +2587,7 @@ Model {
 	  Position		  [705, 712, 740, 748]
 	  ZOrder		  251
 	  InitialCondition	  "[0;0;0]"
-	  InitialConditionSetting "Auto"
+	  InitialConditionSetting "State (most efficient)"
 	  SampleTime		  "Ts"
 	  ICPrevOutput		  "DiscIntNeverNeededParam"
 	  ICPrevScaledInput	  "DiscIntNeverNeededParam"
@@ -2787,8 +2733,6 @@ Model {
 	    Location		    [223, 338, 826, 833]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -2822,7 +2766,7 @@ Model {
 	      BlockType		      S-Function
 	      Name		      " SFunction "
 	      SID		      "316::22"
-	      Tag		      "Stateflow S-Function pose_ctrl 4"
+	      Tag		      "Stateflow S-Function pose_ctrl_R2017b 4"
 	      Ports		      [1, 2]
 	      Position		      [180, 100, 230, 160]
 	      ZOrder		      13
@@ -2900,8 +2844,6 @@ Model {
 	    Location		    [223, 338, 826, 833]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -2944,7 +2886,7 @@ Model {
 	      BlockType		      S-Function
 	      Name		      " SFunction "
 	      SID		      "317::24"
-	      Tag		      "Stateflow S-Function pose_ctrl 11"
+	      Tag		      "Stateflow S-Function pose_ctrl_R2017b 11"
 	      Ports		      [2, 2]
 	      Position		      [180, 100, 230, 160]
 	      ZOrder		      15
@@ -3030,8 +2972,6 @@ Model {
 	    Location		    [223, 338, 826, 833]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -3065,7 +3005,7 @@ Model {
 	      BlockType		      S-Function
 	      Name		      " SFunction "
 	      SID		      "592::22"
-	      Tag		      "Stateflow S-Function pose_ctrl 52"
+	      Tag		      "Stateflow S-Function pose_ctrl_R2017b 52"
 	      Ports		      [1, 2]
 	      Position		      [180, 100, 230, 160]
 	      ZOrder		      13
@@ -3143,8 +3083,6 @@ Model {
 	    Location		    [223, 338, 826, 833]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -3178,7 +3116,7 @@ Model {
 	      BlockType		      S-Function
 	      Name		      " SFunction "
 	      SID		      "318::22"
-	      Tag		      "Stateflow S-Function pose_ctrl 21"
+	      Tag		      "Stateflow S-Function pose_ctrl_R2017b 21"
 	      Ports		      [1, 2]
 	      Position		      [180, 100, 230, 160]
 	      ZOrder		      13
@@ -3256,8 +3194,6 @@ Model {
 	    Location		    [223, 338, 826, 833]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -3300,7 +3236,7 @@ Model {
 	      BlockType		      S-Function
 	      Name		      " SFunction "
 	      SID		      "319::23"
-	      Tag		      "Stateflow S-Function pose_ctrl 22"
+	      Tag		      "Stateflow S-Function pose_ctrl_R2017b 22"
 	      Ports		      [2, 2]
 	      Position		      [180, 100, 230, 160]
 	      ZOrder		      14
@@ -4188,8 +4124,6 @@ Model {
 	Location		[0, 0, 1280, 1053]
 	Open			off
 	PortBlocksUseCompactNotation off
-	SetExecutionDomain	off
-	ExecutionDomainType	"Deduce"
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -4432,7 +4366,7 @@ Model {
 	  Position		  [360, 42, 395, 78]
 	  ZOrder		  339
 	  InitialCondition	  "[0;0;0]"
-	  InitialConditionSetting "Auto"
+	  InitialConditionSetting "State (most efficient)"
 	  SampleTime		  "Ts"
 	  ICPrevOutput		  "DiscIntNeverNeededParam"
 	  ICPrevScaledInput	  "DiscIntNeverNeededParam"
@@ -4449,7 +4383,7 @@ Model {
 	  Position		  [1365, 1177, 1400, 1213]
 	  ZOrder		  344
 	  InitialCondition	  "[0;0;0;0]"
-	  InitialConditionSetting "Auto"
+	  InitialConditionSetting "State (most efficient)"
 	  SampleTime		  "Ts"
 	  ICPrevOutput		  "DiscIntNeverNeededParam"
 	  ICPrevScaledInput	  "DiscIntNeverNeededParam"
@@ -4608,7 +4542,6 @@ Model {
 	  SourceType		  "Identity Matrix"
 	  SourceProductName	  "DSP System Toolbox"
 	  SourceProductBaseCode	  "DS"
-	  MultiThreadCoSim	  "auto"
 	  Inherit		  off
 	  N			  "3"
 	  Ts			  "inf"
@@ -4690,8 +4623,6 @@ Model {
 	    Location		    [223, 338, 826, 833]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -4752,7 +4683,7 @@ Model {
 	      BlockType		      S-Function
 	      Name		      " SFunction "
 	      SID		      "531::30"
-	      Tag		      "Stateflow S-Function pose_ctrl 45"
+	      Tag		      "Stateflow S-Function pose_ctrl_R2017b 45"
 	      Ports		      [4, 5]
 	      Position		      [180, 100, 230, 220]
 	      ZOrder		      20
@@ -4918,8 +4849,6 @@ Model {
 	    Location		    [223, 338, 826, 833]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -4953,7 +4882,7 @@ Model {
 	      BlockType		      S-Function
 	      Name		      " SFunction "
 	      SID		      "529::22"
-	      Tag		      "Stateflow S-Function pose_ctrl 44"
+	      Tag		      "Stateflow S-Function pose_ctrl_R2017b 44"
 	      Ports		      [1, 2]
 	      Position		      [180, 100, 230, 160]
 	      ZOrder		      13
@@ -5031,8 +4960,6 @@ Model {
 	    Location		    [223, 338, 826, 833]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -5075,7 +5002,7 @@ Model {
 	      BlockType		      S-Function
 	      Name		      " SFunction "
 	      SID		      "562::23"
-	      Tag		      "Stateflow S-Function pose_ctrl 46"
+	      Tag		      "Stateflow S-Function pose_ctrl_R2017b 46"
 	      Ports		      [2, 2]
 	      Position		      [180, 100, 230, 160]
 	      ZOrder		      14
@@ -5161,8 +5088,6 @@ Model {
 	    Location		    [223, 338, 826, 833]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -5205,7 +5130,7 @@ Model {
 	      BlockType		      S-Function
 	      Name		      " SFunction "
 	      SID		      "563::23"
-	      Tag		      "Stateflow S-Function pose_ctrl 47"
+	      Tag		      "Stateflow S-Function pose_ctrl_R2017b 47"
 	      Ports		      [2, 2]
 	      Position		      [180, 100, 230, 160]
 	      ZOrder		      14
@@ -5291,8 +5216,6 @@ Model {
 	    Location		    [223, 338, 826, 833]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -5398,7 +5321,7 @@ Model {
 	      BlockType		      S-Function
 	      Name		      " SFunction "
 	      SID		      "564::32"
-	      Tag		      "Stateflow S-Function pose_ctrl 48"
+	      Tag		      "Stateflow S-Function pose_ctrl_R2017b 48"
 	      Ports		      [9, 2]
 	      Position		      [180, 100, 230, 300]
 	      ZOrder		      21
@@ -5532,8 +5455,6 @@ Model {
 	    Location		    [223, 338, 826, 833]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -5567,7 +5488,7 @@ Model {
 	      BlockType		      S-Function
 	      Name		      " SFunction "
 	      SID		      "584::22"
-	      Tag		      "Stateflow S-Function pose_ctrl 49"
+	      Tag		      "Stateflow S-Function pose_ctrl_R2017b 49"
 	      Ports		      [1, 2]
 	      Position		      [180, 100, 230, 160]
 	      ZOrder		      13
@@ -5645,8 +5566,6 @@ Model {
 	    Location		    [223, 338, 826, 833]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -5689,7 +5608,7 @@ Model {
 	      BlockType		      S-Function
 	      Name		      " SFunction "
 	      SID		      "585::24"
-	      Tag		      "Stateflow S-Function pose_ctrl 50"
+	      Tag		      "Stateflow S-Function pose_ctrl_R2017b 50"
 	      Ports		      [2, 2]
 	      Position		      [180, 100, 230, 160]
 	      ZOrder		      15
@@ -5775,8 +5694,6 @@ Model {
 	    Location		    [223, 338, 826, 833]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -5810,7 +5727,7 @@ Model {
 	      BlockType		      S-Function
 	      Name		      " SFunction "
 	      SID		      "496::22"
-	      Tag		      "Stateflow S-Function pose_ctrl 51"
+	      Tag		      "Stateflow S-Function pose_ctrl_R2017b 51"
 	      Ports		      [1, 2]
 	      Position		      [180, 100, 230, 160]
 	      ZOrder		      13
@@ -5888,8 +5805,6 @@ Model {
 	    Location		    [223, 338, 826, 833]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -5923,7 +5838,7 @@ Model {
 	      BlockType		      S-Function
 	      Name		      " SFunction "
 	      SID		      "600::22"
-	      Tag		      "Stateflow S-Function pose_ctrl 55"
+	      Tag		      "Stateflow S-Function pose_ctrl_R2017b 55"
 	      Ports		      [1, 2]
 	      Position		      [180, 100, 230, 160]
 	      ZOrder		      13
@@ -6006,8 +5921,6 @@ Model {
 	    Location		    [223, 338, 826, 833]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -6077,7 +5990,7 @@ Model {
 	      BlockType		      S-Function
 	      Name		      " SFunction "
 	      SID		      "680::26"
-	      Tag		      "Stateflow S-Function pose_ctrl 65"
+	      Tag		      "Stateflow S-Function pose_ctrl_R2017b 65"
 	      Ports		      [5, 2]
 	      Position		      [180, 100, 230, 220]
 	      ZOrder		      17
@@ -7520,8 +7433,6 @@ Model {
 	Location		[0, 0, 1280, 1053]
 	Open			off
 	PortBlocksUseCompactNotation off
-	SetExecutionDomain	off
-	ExecutionDomainType	"Deduce"
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -7762,7 +7673,7 @@ Model {
 	  Position		  [1060, -118, 1095, -82]
 	  ZOrder		  376
 	  InitialCondition	  "[0;0;0]"
-	  InitialConditionSetting "Auto"
+	  InitialConditionSetting "State (most efficient)"
 	  SampleTime		  "Ts"
 	  ICPrevOutput		  "DiscIntNeverNeededParam"
 	  ICPrevScaledInput	  "DiscIntNeverNeededParam"
@@ -7775,7 +7686,7 @@ Model {
 	  Position		  [1275, 1187, 1310, 1223]
 	  ZOrder		  384
 	  InitialCondition	  "[0;0;0;0]"
-	  InitialConditionSetting "Auto"
+	  InitialConditionSetting "State (most efficient)"
 	  SampleTime		  "Ts"
 	  ICPrevOutput		  "DiscIntNeverNeededParam"
 	  ICPrevScaledInput	  "DiscIntNeverNeededParam"
@@ -7849,8 +7760,6 @@ Model {
 	    Location		    [223, 338, 826, 833]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -7929,7 +7838,7 @@ Model {
 	      BlockType		      S-Function
 	      Name		      " SFunction "
 	      SID		      "715::27"
-	      Tag		      "Stateflow S-Function pose_ctrl 70"
+	      Tag		      "Stateflow S-Function pose_ctrl_R2017b 70"
 	      Ports		      [6, 2]
 	      Position		      [180, 102, 230, 243]
 	      ZOrder		      18
@@ -8042,8 +7951,6 @@ Model {
 	    Location		    [223, 338, 826, 833]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -8077,7 +7984,7 @@ Model {
 	      BlockType		      S-Function
 	      Name		      " SFunction "
 	      SID		      "708::22"
-	      Tag		      "Stateflow S-Function pose_ctrl 68"
+	      Tag		      "Stateflow S-Function pose_ctrl_R2017b 68"
 	      Ports		      [1, 2]
 	      Position		      [180, 100, 230, 160]
 	      ZOrder		      13
@@ -8156,8 +8063,6 @@ Model {
 	    Location		    [223, 338, 826, 833]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -8209,7 +8114,7 @@ Model {
 	      BlockType		      S-Function
 	      Name		      " SFunction "
 	      SID		      "762::24"
-	      Tag		      "Stateflow S-Function pose_ctrl 78"
+	      Tag		      "Stateflow S-Function pose_ctrl_R2017b 78"
 	      Ports		      [3, 2]
 	      Position		      [180, 100, 230, 180]
 	      ZOrder		      15
@@ -8308,8 +8213,6 @@ Model {
 	    Location		    [223, 338, 826, 833]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -8424,7 +8327,7 @@ Model {
 	      BlockType		      S-Function
 	      Name		      " SFunction "
 	      SID		      "763::31"
-	      Tag		      "Stateflow S-Function pose_ctrl 79"
+	      Tag		      "Stateflow S-Function pose_ctrl_R2017b 79"
 	      Ports		      [10, 2]
 	      Position		      [180, 100, 230, 320]
 	      ZOrder		      22
@@ -8566,8 +8469,6 @@ Model {
 	    Location		    [223, 338, 826, 833]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -8610,7 +8511,7 @@ Model {
 	      BlockType		      S-Function
 	      Name		      " SFunction "
 	      SID		      "778::23"
-	      Tag		      "Stateflow S-Function pose_ctrl 82"
+	      Tag		      "Stateflow S-Function pose_ctrl_R2017b 82"
 	      Ports		      [2, 2]
 	      Position		      [180, 100, 230, 160]
 	      ZOrder		      14
@@ -8697,8 +8598,6 @@ Model {
 	    Location		    [223, 338, 826, 833]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -8741,7 +8640,7 @@ Model {
 	      BlockType		      S-Function
 	      Name		      " SFunction "
 	      SID		      "781::23"
-	      Tag		      "Stateflow S-Function pose_ctrl 83"
+	      Tag		      "Stateflow S-Function pose_ctrl_R2017b 83"
 	      Ports		      [2, 2]
 	      Position		      [180, 100, 230, 160]
 	      ZOrder		      14
@@ -8828,8 +8727,6 @@ Model {
 	    Location		    [223, 338, 826, 833]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -8872,7 +8769,7 @@ Model {
 	      BlockType		      S-Function
 	      Name		      " SFunction "
 	      SID		      "788::23"
-	      Tag		      "Stateflow S-Function pose_ctrl 84"
+	      Tag		      "Stateflow S-Function pose_ctrl_R2017b 84"
 	      Ports		      [2, 2]
 	      Position		      [180, 100, 230, 160]
 	      ZOrder		      14
@@ -8959,8 +8856,6 @@ Model {
 	    Location		    [223, 338, 826, 833]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -9021,7 +8916,7 @@ Model {
 	      BlockType		      S-Function
 	      Name		      " SFunction "
 	      SID		      "789::25"
-	      Tag		      "Stateflow S-Function pose_ctrl 85"
+	      Tag		      "Stateflow S-Function pose_ctrl_R2017b 85"
 	      Ports		      [4, 2]
 	      Position		      [180, 102, 230, 203]
 	      ZOrder		      16
@@ -9122,8 +9017,6 @@ Model {
 	    Location		    [223, 338, 826, 833]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -9157,7 +9050,7 @@ Model {
 	      BlockType		      S-Function
 	      Name		      " SFunction "
 	      SID		      "737::22"
-	      Tag		      "Stateflow S-Function pose_ctrl 73"
+	      Tag		      "Stateflow S-Function pose_ctrl_R2017b 73"
 	      Ports		      [1, 2]
 	      Position		      [180, 100, 230, 160]
 	      ZOrder		      13
@@ -9236,8 +9129,6 @@ Model {
 	    Location		    [223, 338, 826, 833]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -9298,7 +9189,7 @@ Model {
 	      BlockType		      S-Function
 	      Name		      " SFunction "
 	      SID		      "752::29"
-	      Tag		      "Stateflow S-Function pose_ctrl 74"
+	      Tag		      "Stateflow S-Function pose_ctrl_R2017b 74"
 	      Ports		      [4, 5]
 	      Position		      [180, 100, 230, 220]
 	      ZOrder		      20
@@ -9465,8 +9356,6 @@ Model {
 	    Location		    [223, 338, 826, 833]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -9509,7 +9398,7 @@ Model {
 	      BlockType		      S-Function
 	      Name		      " SFunction "
 	      SID		      "755::23"
-	      Tag		      "Stateflow S-Function pose_ctrl 75"
+	      Tag		      "Stateflow S-Function pose_ctrl_R2017b 75"
 	      Ports		      [2, 2]
 	      Position		      [180, 100, 230, 160]
 	      ZOrder		      14
@@ -9596,8 +9485,6 @@ Model {
 	    Location		    [223, 338, 826, 833]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -9631,7 +9518,7 @@ Model {
 	      BlockType		      S-Function
 	      Name		      " SFunction "
 	      SID		      "720::22"
-	      Tag		      "Stateflow S-Function pose_ctrl 71"
+	      Tag		      "Stateflow S-Function pose_ctrl_R2017b 71"
 	      Ports		      [1, 2]
 	      Position		      [180, 100, 230, 160]
 	      ZOrder		      13
@@ -9709,8 +9596,6 @@ Model {
 	    Location		    [223, 338, 826, 833]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -9753,7 +9638,7 @@ Model {
 	      BlockType		      S-Function
 	      Name		      " SFunction "
 	      SID		      "721::24"
-	      Tag		      "Stateflow S-Function pose_ctrl 72"
+	      Tag		      "Stateflow S-Function pose_ctrl_R2017b 72"
 	      Ports		      [2, 2]
 	      Position		      [180, 100, 230, 160]
 	      ZOrder		      15
@@ -9839,8 +9724,6 @@ Model {
 	    Location		    [223, 338, 826, 833]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -9874,7 +9757,7 @@ Model {
 	      BlockType		      S-Function
 	      Name		      " SFunction "
 	      SID		      "709::22"
-	      Tag		      "Stateflow S-Function pose_ctrl 69"
+	      Tag		      "Stateflow S-Function pose_ctrl_R2017b 69"
 	      Ports		      [1, 2]
 	      Position		      [180, 100, 230, 160]
 	      ZOrder		      13
@@ -9953,8 +9836,6 @@ Model {
 	    Location		    [223, 338, 826, 833]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -9997,7 +9878,7 @@ Model {
 	      BlockType		      S-Function
 	      Name		      " SFunction "
 	      SID		      "756::23"
-	      Tag		      "Stateflow S-Function pose_ctrl 76"
+	      Tag		      "Stateflow S-Function pose_ctrl_R2017b 76"
 	      Ports		      [2, 2]
 	      Position		      [180, 100, 230, 160]
 	      ZOrder		      14
@@ -10084,8 +9965,6 @@ Model {
 	    Location		    [223, 338, 826, 833]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -10128,7 +10007,7 @@ Model {
 	      BlockType		      S-Function
 	      Name		      " SFunction "
 	      SID		      "757::23"
-	      Tag		      "Stateflow S-Function pose_ctrl 77"
+	      Tag		      "Stateflow S-Function pose_ctrl_R2017b 77"
 	      Ports		      [2, 2]
 	      Position		      [180, 100, 230, 160]
 	      ZOrder		      14
@@ -10305,7 +10184,7 @@ Model {
 	  "9411764706 1;1 0.411764705882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.39"
 	  "2156862745098 0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863]))"
 	  ",extmgr.Configuration('Tools','Plot Navigation',true,'OnceAtStop',false,'AutoscaleMode','Auto'),extmgr.Configuratio"
-	  "n('Tools','Measurements',true,'Version','2017b')),'Version','2017b','Position',[63 1 2498 1359])"
+	  "n('Tools','Measurements',true,'Version','2017b')),'Version','2018b','Position',[63 1 2498 1359])"
 	  NumInputPorts		  "1"
 	  Floating		  off
 	}
@@ -10360,7 +10239,7 @@ Model {
 	  "882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.8313725490"
 	  "19608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configuration('Too"
 	  "ls','Plot Navigation',true,'OnceAtStop',false),extmgr.Configuration('Tools','Measurements',true,'Version','2017b'))"
-	  ",'Version','2017b','Position',[63 1 2498 1359])"
+	  ",'Version','2018b','Position',[63 1 2498 1359])"
 	  NumInputPorts		  "1"
 	  Floating		  off
 	}
@@ -10387,7 +10266,7 @@ Model {
 	  "74509803922],'ColorOrder',[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;1 1 0.066666"
 	  "6666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.0745098039215686;0.058823529"
 	  "4117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configuration('Tools','Plot Navigation',true,'OnceAtSt"
-	  "op',false),extmgr.Configuration('Tools','Measurements',true,'Version','2017b')),'Version','2017b','Position',[63 1 "
+	  "op',false),extmgr.Configuration('Tools','Measurements',true,'Version','2017b')),'Version','2018b','Position',[63 1 "
 	  "2498 1359])"
 	  NumInputPorts		  "1"
 	  Floating		  off
@@ -10416,7 +10295,7 @@ Model {
 	  "5882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372549"
 	  "019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configuration('To"
 	  "ols','Plot Navigation',true,'OnceAtStop',false,'PreviousAutoscale','X'),extmgr.Configuration('Tools','Measurements'"
-	  ",true,'Version','2017b')),'Version','2017b','Position',[63 1 2498 1359])"
+	  ",true,'Version','2017b')),'Version','2018b','Position',[63 1 2498 1359])"
 	  NumInputPorts		  "1"
 	  Floating		  off
 	}
@@ -10444,7 +10323,7 @@ Model {
 	  "078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.074"
 	  "5098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configuration('Tools','Plot N"
 	  "avigation',true,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr.Configuration('Tools','Measurements',true,'Vers"
-	  "ion','2017b')),'Version','2017b','Position',[63 1 2498 1359])"
+	  "ion','2017b')),'Version','2018b','Position',[63 1 2498 1359])"
 	  NumInputPorts		  "1"
 	  Floating		  off
 	}
@@ -10471,7 +10350,7 @@ Model {
 	  "rOrder',[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;1 1 0.0666666666666667;0.71764"
 	  "7058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.07"
 	  "45098039215686 0.650980392156863])),extmgr.Configuration('Tools','Plot Navigation',true,'OnceAtStop',false),extmgr."
-	  "Configuration('Tools','Measurements',true,'Version','2017b')),'Version','2017b','Position',[63 1 2498 1359])"
+	  "Configuration('Tools','Measurements',true,'Version','2017b')),'Version','2018b','Position',[63 1 2498 1359])"
 	  NumInputPorts		  "1"
 	  Floating		  off
 	}
@@ -10499,7 +10378,7 @@ Model {
 	  "5882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372549"
 	  "019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configuration('To"
 	  "ols','Plot Navigation',true,'OnceAtStop',false),extmgr.Configuration('Tools','Measurements',true,'Version','2017b')"
-	  "),'Version','2017b','Position',[63 1 2498 1359])"
+	  "),'Version','2018b','Position',[63 1 2498 1359])"
 	  NumInputPorts		  "1"
 	  Floating		  off
 	}
@@ -10526,7 +10405,7 @@ Model {
 	  "9803922],'ColorOrder',[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;1 1 0.0666666666"
 	  "666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.0745098039215686;0.0588235294117"
 	  "647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configuration('Tools','Plot Navigation',true,'OnceAtStop',"
-	  "false),extmgr.Configuration('Tools','Measurements',true,'Version','2017b')),'Version','2017b','Position',[908 523 5"
+	  "false),extmgr.Configuration('Tools','Measurements',true,'Version','2017b')),'Version','2018b','Position',[908 523 5"
 	  "60 420])"
 	  NumInputPorts		  "1"
 	  Floating		  off
@@ -10554,7 +10433,7 @@ Model {
 	  "29411764706 1;1 0.411764705882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.3"
 	  "92156862745098 0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])"
 	  "),extmgr.Configuration('Tools','Plot Navigation',true),extmgr.Configuration('Tools','Measurements',true,'Version','"
-	  "2017b')),'Version','2017b','Position',[908 523 560 420])"
+	  "2017b')),'Version','2018b','Position',[908 523 560 420])"
 	  NumInputPorts		  "1"
 	  Floating		  off
 	}
@@ -10581,7 +10460,7 @@ Model {
 	  "',[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;1 1 0.0666666666666667;0.71764705882"
 	  "3529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.07450980"
 	  "39215686 0.650980392156863])),extmgr.Configuration('Tools','Plot Navigation',true,'OnceAtStop',false),extmgr.Config"
-	  "uration('Tools','Measurements',true,'Version','2017b')),'Version','2017b','Position',[63 1 2498 1359])"
+	  "uration('Tools','Measurements',true,'Version','2017b')),'Version','2018b','Position',[63 1 2498 1359])"
 	  NumInputPorts		  "1"
 	  Floating		  off
 	}
@@ -10608,7 +10487,7 @@ Model {
 	  "803922],'ColorOrder',[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;1 1 0.06666666666"
 	  "66667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.0745098039215686;0.05882352941176"
 	  "47 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configuration('Tools','Plot Navigation',true),extmgr.Config"
-	  "uration('Tools','Measurements',true,'Version','2017b')),'Version','2017b','Position',[908 523 560 420])"
+	  "uration('Tools','Measurements',true,'Version','2017b')),'Version','2018b','Position',[908 523 560 420])"
 	  NumInputPorts		  "1"
 	  Floating		  off
 	}
@@ -10664,7 +10543,7 @@ Model {
 	  "666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.0745098039215686;0.0588235294117"
 	  "647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configuration('Tools','Plot Navigation',true,'OnceAtStop',"
 	  "false,'PreviousAutoscale','XY'),extmgr.Configuration('Tools','Measurements',true,'Version','2017b')),'Version','201"
-	  "7b','Position',[26 -6 2498 1359])"
+	  "8b','Position',[26 -6 2498 1359])"
 	  NumInputPorts		  "1"
 	  Floating		  off
 	}
@@ -10692,7 +10571,7 @@ Model {
 	  "882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.8313725490"
 	  "19608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configuration('Too"
 	  "ls','Plot Navigation',true,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr.Configuration('Tools','Measurements'"
-	  ",true,'Version','2017b')),'Version','2017b','Position',[26 -6 2498 1359])"
+	  ",true,'Version','2017b')),'Version','2018b','Position',[26 -6 2498 1359])"
 	  NumInputPorts		  "1"
 	  Floating		  off
 	}
@@ -10720,7 +10599,7 @@ Model {
 	  "86 0.623529411764706 1;1 0.411764705882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921"
 	  "569 1;0.392156862745098 0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.65098039"
 	  "2156863])),extmgr.Configuration('Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr."
-	  "Configuration('Tools','Measurements',true,'Version','2017b')),'Version','2017b','Position',[26 -6 2498 1359])"
+	  "Configuration('Tools','Measurements',true,'Version','2017b')),'Version','2018b','Position',[26 -6 2498 1359])"
 	  NumInputPorts		  "1"
 	  Floating		  off
 	}
@@ -10776,7 +10655,7 @@ Model {
 	  "882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.8313725490"
 	  "19608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configuration('Too"
 	  "ls','Plot Navigation',true,'OnceAtStop',false),extmgr.Configuration('Tools','Measurements',true,'Version','2017b'))"
-	  ",'Version','2017b','Position',[63 1 2498 1359])"
+	  ",'Version','2018b','Position',[63 1 2498 1359])"
 	  NumInputPorts		  "1"
 	  Floating		  off
 	}
@@ -11955,8 +11834,6 @@ Model {
 	Location		[223, 338, 826, 833]
 	Open			off
 	PortBlocksUseCompactNotation off
-	SetExecutionDomain	off
-	ExecutionDomainType	"Deduce"
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -11990,7 +11867,7 @@ Model {
 	  BlockType		  S-Function
 	  Name			  " SFunction "
 	  SID			  "933::22"
-	  Tag			  "Stateflow S-Function pose_ctrl 97"
+	  Tag			  "Stateflow S-Function pose_ctrl_R2017b 97"
 	  Ports			  [1, 2]
 	  Position		  [180, 100, 230, 160]
 	  ZOrder		  13
@@ -12068,8 +11945,6 @@ Model {
 	Location		[223, 338, 826, 833]
 	Open			off
 	PortBlocksUseCompactNotation off
-	SetExecutionDomain	off
-	ExecutionDomainType	"Deduce"
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -12103,7 +11978,7 @@ Model {
 	  BlockType		  S-Function
 	  Name			  " SFunction "
 	  SID			  "922::22"
-	  Tag			  "Stateflow S-Function pose_ctrl 96"
+	  Tag			  "Stateflow S-Function pose_ctrl_R2017b 96"
 	  Ports			  [1, 2]
 	  Position		  [180, 100, 230, 160]
 	  ZOrder		  13
@@ -12181,8 +12056,6 @@ Model {
 	Location		[223, 338, 826, 833]
 	Open			off
 	PortBlocksUseCompactNotation off
-	SetExecutionDomain	off
-	ExecutionDomainType	"Deduce"
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -12216,7 +12089,7 @@ Model {
 	  BlockType		  S-Function
 	  Name			  " SFunction "
 	  SID			  "25::22"
-	  Tag			  "Stateflow S-Function pose_ctrl 5"
+	  Tag			  "Stateflow S-Function pose_ctrl_R2017b 5"
 	  Ports			  [1, 2]
 	  Position		  [180, 100, 230, 160]
 	  ZOrder		  13
@@ -12299,8 +12172,6 @@ Model {
 	Location		[0, 0, 1280, 1053]
 	Open			off
 	PortBlocksUseCompactNotation off
-	SetExecutionDomain	off
-	ExecutionDomainType	"Deduce"
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -12552,8 +12423,6 @@ Model {
 	    Location		    [223, 338, 826, 833]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -12587,7 +12456,7 @@ Model {
 	      BlockType		      S-Function
 	      Name		      " SFunction "
 	      SID		      "178::22"
-	      Tag		      "Stateflow S-Function pose_ctrl 1"
+	      Tag		      "Stateflow S-Function pose_ctrl_R2017b 1"
 	      Ports		      [1, 2]
 	      Position		      [180, 100, 230, 160]
 	      ZOrder		      13
@@ -12667,8 +12536,6 @@ Model {
 	    Location		    [223, 338, 826, 833]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -12702,7 +12569,7 @@ Model {
 	      BlockType		      S-Function
 	      Name		      " SFunction "
 	      SID		      "179::22"
-	      Tag		      "Stateflow S-Function pose_ctrl 2"
+	      Tag		      "Stateflow S-Function pose_ctrl_R2017b 2"
 	      Ports		      [1, 2]
 	      Position		      [180, 100, 230, 160]
 	      ZOrder		      13
@@ -12780,8 +12647,6 @@ Model {
 	    Location		    [223, 338, 826, 833]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -12815,7 +12680,7 @@ Model {
 	      BlockType		      S-Function
 	      Name		      " SFunction "
 	      SID		      "597::22"
-	      Tag		      "Stateflow S-Function pose_ctrl 54"
+	      Tag		      "Stateflow S-Function pose_ctrl_R2017b 54"
 	      Ports		      [1, 2]
 	      Position		      [180, 100, 230, 160]
 	      ZOrder		      13
@@ -12893,8 +12758,6 @@ Model {
 	    Location		    [223, 338, 826, 833]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -12928,7 +12791,7 @@ Model {
 	      BlockType		      S-Function
 	      Name		      " SFunction "
 	      SID		      "200::22"
-	      Tag		      "Stateflow S-Function pose_ctrl 3"
+	      Tag		      "Stateflow S-Function pose_ctrl_R2017b 3"
 	      Ports		      [1, 2]
 	      Position		      [180, 100, 230, 160]
 	      ZOrder		      13
@@ -13586,7 +13449,7 @@ Model {
       "9411764706 1;1 0.411764705882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0"
       ".392156862745098 0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156"
       "863])),extmgr.Configuration('Tools','Plot Navigation',true),extmgr.Configuration('Tools','Measurements',true,'Ve"
-      "rsion','2017b')),'Version','2017b','Position',[1963 97 560 420])"
+      "rsion','2017b')),'Version','2018b','Position',[1963 97 560 420])"
       NumInputPorts	      "3"
       Floating		      off
     }
@@ -13615,7 +13478,7 @@ Model {
       "0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.0745098039215686;0."
       "0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configuration('Tools','Plot Navigation',tr"
       "ue,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr.Configuration('Tools','Measurements',true,'Version','2017"
-      "b')),'Version','2017b')"
+      "b')),'Version','2018b')"
       NumInputPorts	      "1"
       Floating		      off
     }
@@ -13669,7 +13532,7 @@ Model {
       "74509803922],'ColorOrder',[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;1 1 0.066"
       "6666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.0745098039215686;0.058"
       "8235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configuration('Tools','Plot Navigation',true)"
-      ",extmgr.Configuration('Tools','Measurements',true,'Version','2017b')),'Version','2017b','Position',[63 1 2498 13"
+      ",extmgr.Configuration('Tools','Measurements',true,'Version','2017b')),'Version','2018b','Position',[63 1 2498 13"
       "59])"
       NumInputPorts	      "1"
       Floating		      off
@@ -13697,7 +13560,7 @@ Model {
       "411764705882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 "
       "0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Con"
       "figuration('Tools','Plot Navigation',true),extmgr.Configuration('Tools','Measurements',true,'Version','2017b')),"
-      "'Version','2017b','Position',[1963 97 560 420])"
+      "'Version','2018b','Position',[1963 97 560 420])"
       NumInputPorts	      "1"
       Floating		      off
     }
@@ -13724,7 +13587,7 @@ Model {
       "411764705882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 "
       "0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Con"
       "figuration('Tools','Plot Navigation',true),extmgr.Configuration('Tools','Measurements',true,'Version','2017b')),"
-      "'Version','2017b','Position',[1963 97 560 420])"
+      "'Version','2018b','Position',[1963 97 560 420])"
       NumInputPorts	      "1"
       Floating		      off
     }
@@ -13866,8 +13729,6 @@ Model {
 	Location		[223, 338, 826, 833]
 	Open			off
 	PortBlocksUseCompactNotation off
-	SetExecutionDomain	off
-	ExecutionDomainType	"Deduce"
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -13901,7 +13762,7 @@ Model {
 	  BlockType		  S-Function
 	  Name			  " SFunction "
 	  SID			  "218::29"
-	  Tag			  "Stateflow S-Function pose_ctrl 14"
+	  Tag			  "Stateflow S-Function pose_ctrl_R2017b 14"
 	  Ports			  [1, 9]
 	  Position		  [180, 100, 230, 300]
 	  ZOrder		  20
@@ -14267,8 +14128,6 @@ Model {
 	Location		[0, 0, 1280, 1053]
 	Open			off
 	PortBlocksUseCompactNotation off
-	SetExecutionDomain	off
-	ExecutionDomainType	"Deduce"
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -14337,8 +14196,6 @@ Model {
 	    Location		    [223, 338, 826, 833]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -14381,7 +14238,7 @@ Model {
 	      BlockType		      S-Function
 	      Name		      " SFunction "
 	      SID		      "774::30"
-	      Tag		      "Stateflow S-Function pose_ctrl 80"
+	      Tag		      "Stateflow S-Function pose_ctrl_R2017b 80"
 	      Ports		      [2, 7]
 	      Position		      [180, 100, 230, 260]
 	      ZOrder		      21
@@ -14579,8 +14436,6 @@ Model {
 	    Location		    [223, 338, 826, 833]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -14686,7 +14541,7 @@ Model {
 	      BlockType		      S-Function
 	      Name		      " SFunction "
 	      SID		      "775::32"
-	      Tag		      "Stateflow S-Function pose_ctrl 81"
+	      Tag		      "Stateflow S-Function pose_ctrl_R2017b 81"
 	      Ports		      [9, 3]
 	      Position		      [180, 100, 230, 300]
 	      ZOrder		      23
@@ -14950,8 +14805,6 @@ Model {
 	Location		[0, 0, 1280, 1053]
 	Open			off
 	PortBlocksUseCompactNotation off
-	SetExecutionDomain	off
-	ExecutionDomainType	"Deduce"
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -15020,8 +14873,6 @@ Model {
 	    Location		    [223, 338, 826, 833]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -15064,7 +14915,7 @@ Model {
 	      BlockType		      S-Function
 	      Name		      " SFunction "
 	      SID		      "64::30"
-	      Tag		      "Stateflow S-Function pose_ctrl 6"
+	      Tag		      "Stateflow S-Function pose_ctrl_R2017b 6"
 	      Ports		      [2, 7]
 	      Position		      [180, 100, 230, 260]
 	      ZOrder		      21
@@ -15262,8 +15113,6 @@ Model {
 	    Location		    [223, 338, 826, 833]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -15369,7 +15218,7 @@ Model {
 	      BlockType		      S-Function
 	      Name		      " SFunction "
 	      SID		      "84::32"
-	      Tag		      "Stateflow S-Function pose_ctrl 7"
+	      Tag		      "Stateflow S-Function pose_ctrl_R2017b 7"
 	      Ports		      [9, 3]
 	      Position		      [180, 100, 230, 300]
 	      ZOrder		      23
@@ -16482,10 +16331,10 @@ Model {
 Stateflow {
   machine {
     id			    1
-    name		    "pose_ctrl"
+    name		    "pose_ctrl_R2017b"
     created		    "23-Nov-2017 10:52:06"
     isLibrary		    0
-    sfVersion		    80000014
+    sfVersion		    80000012
     firstTarget		    430
   }
   chart {
