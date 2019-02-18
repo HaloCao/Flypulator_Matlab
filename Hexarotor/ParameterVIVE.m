@@ -50,17 +50,21 @@ Ip_0 = Ip;
 % Im_0 = Im;
 
 % rotor constants
-k = 5.6e-05; % N/(rad/s)^2
+k = 5.13e-05; % N/(rad/s)^2
 k_0 = k;
 b = 1.1e-06; % Nm/(rad/s)^2
 b_0 = b;
 
+% actuator boundaries [(rad/s)^2]
+rot_vel_max = (5700 * pi/30)^2; % 5700 rpm
+rot_vel_min = 0;
+
 % drone radius (arm length)
-L = 0.4;
+L = 0.6;
 L_0 = L;
 
 % mass
-m = 4.85; % kg
+m = 4.398; % kg
 m_0 = m;
 mp = 0.05;
 mp_0 = mp;
@@ -70,14 +74,14 @@ g = 9.81; % gravity
 g_0 = g;
 
 % motor height
-deltah =-0.0427;
+deltah = 0;
 deltah_0 = deltah;
 
 % Motor tilt angles
 alpha_i = pi/180 * 13.6;
-alpha = [-alpha_i;alpha_i;-alpha_i;alpha_i;-alpha_i;alpha_i];
+alpha = [alpha_i;-alpha_i;alpha_i;-alpha_i;alpha_i;-alpha_i];
 alpha_0 = alpha;
-beta_i = pi/180 * 10.6;
+beta_i = pi/180 * 0;
 beta = [beta_i; beta_i; beta_i; beta_i; beta_i; beta_i];
 % beta = [beta_i; -beta_i; beta_i; -beta_i; beta_i; -beta_i];
 beta_0 = beta;
