@@ -55,6 +55,10 @@ k_0 = k;
 b = 1.1e-06; % Nm/(rad/s)^2
 b_0 = b;
 
+% actuator boundaries [(rad/s)^2]
+rot_vel_max = (6300 * pi/30)^2; % 6300 rpm
+rot_vel_min = 0;
+
 % drone radius (arm length)
 L = 0.4;
 L_0 = L;
