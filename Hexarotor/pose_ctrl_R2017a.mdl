@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.488"
+    ComputedModelVersion    "1.489"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -18,8 +18,8 @@ Model {
     NumParameterArguments   0
     OrderedModelArguments   1
   }
-  LogicAnalyzerPlugin	  "on"
   DiagnosticSuppressor	  "on"
+  LogicAnalyzerPlugin	  "on"
   SLCCPlugin		  "on"
   ScopeRefreshTime	  0.035000
   OverrideScopeRefreshTime on
@@ -40,7 +40,7 @@ Model {
       $ObjectID		      2
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [0.0, 0.0, 1280.0, 1053.0]
+      Location		      [0.0, 0.0, 1024.0, 1053.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		3
@@ -62,11 +62,11 @@ Model {
 	$ObjectID		5
 	$ClassName		"Simulink.EditorInfo"
 	IsActive		[1]
-	ViewObjType		"SimulinkTopLevel"
-	LoadSaveID		"0"
-	Extents			[1242.0, 873.0]
-	ZoomFactor		[0.59133426185964033]
-	Offset			[-793.67527285831966, -1604.6611859040363]
+	ViewObjType		"SimulinkSubsys"
+	LoadSaveID		"161"
+	Extents			[986.0, 873.0]
+	ZoomFactor		[2.0]
+	Offset			[142.40387403350508, 109.2079037800687]
       }
       Object {
 	$PropName		"DockComponentsInfo"
@@ -86,7 +86,7 @@ Model {
       "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0Ac"
       "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAABiAP///wAAAAEAAAAAAAAAAPwCA"
       "AAAAfsAAABUAEcATABVAEUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZ"
-      "QBjAHQAbwByAAAAAAD/////AAAAOQD///8AAAUAAAADqAAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
+      "QBjAHQAbwByAAAAAAD/////AAAAOQD///8AAAQAAAADqAAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
       "////wEAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/"
       "////wEAAACA/////wAAAAAAAAAA/////wEAAADo/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAFo/////wAAAAAAAAAA/"
       "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAOH/////wAAAAAAAAAA/"
@@ -100,9 +100,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "chao"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Fri Jan 25 21:42:53 2019"
-  RTWModifiedTimeStamp	  470353373
-  ModelVersionFormat	  "1.%<AutoIncrement:488>"
+  LastModifiedDate	  "Thu Feb 28 12:22:04 2019"
+  RTWModifiedTimeStamp	  473257323
+  ModelVersionFormat	  "1.%<AutoIncrement:489>"
   SampleTimeColors	  on
   SampleTimeAnnotations	  on
   LibraryLinkDisplay	  "disabled"
@@ -1229,7 +1229,7 @@ Model {
   }
   System {
     Name		    "pose_ctrl_R2017a"
-    Location		    [0, 0, 1280, 1053]
+    Location		    [0, 0, 1024, 1053]
     Open		    off
     PortBlocksUseCompactNotation off
     ModelBrowserVisibility  off
@@ -12077,7 +12077,7 @@ Model {
       }
       System {
 	Name			"Motion Equations, p_I"
-	Location		[0, 0, 1280, 1053]
+	Location		[0, 0, 1024, 1053]
 	Open			off
 	PortBlocksUseCompactNotation off
 	ModelBrowserVisibility	off
@@ -12090,7 +12090,7 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"97"
+	ZoomFactor		"200"
 	Block {
 	  BlockType		  Inport
 	  Name			  "f_w_B\n"
@@ -12654,7 +12654,7 @@ Model {
 	  Name			  "MATLAB Function5"
 	  SID			  "200"
 	  Ports			  [1, 1]
-	  Position		  [225, 242, 295, 288]
+	  Position		  [225, 257, 295, 303]
 	  ZOrder		  217
 	  ErrorFcn		  "Stateflow.Translate.translate"
 	  PermitHierarchicalResolution "ExplicitOnly"
@@ -13091,7 +13091,7 @@ Model {
 	    Points		    [0, -131; -452, 0; 0, -114]
 	    Branch {
 	      ZOrder		      105
-	      Points		      [0, -90]
+	      Points		      [0, -75]
 	      DstBlock		      "MATLAB Function5"
 	      DstPort		      1
 	    }
@@ -13113,13 +13113,6 @@ Model {
 	  DstPort		  2
 	}
 	Line {
-	  ZOrder		  302
-	  SrcBlock		  "MATLAB Function5"
-	  SrcPort		  1
-	  DstBlock		  "Product8"
-	  DstPort		  1
-	}
-	Line {
 	  ZOrder		  102
 	  SrcBlock		  "Product8"
 	  SrcPort		  1
@@ -13133,11 +13126,11 @@ Model {
 	  SrcPort		  1
 	  Points		  [31, 0]
 	  Branch {
-	    ZOrder		    301
+	    ZOrder		    313
 	    Labels		    [1, 0]
-	    Points		    [0, 29; -173, 0; 0, -24]
+	    Points		    [0, -37; -173, 0; 0, 27]
 	    DstBlock		    "Product8"
-	    DstPort		    2
+	    DstPort		    1
 	  }
 	  Branch {
 	    ZOrder		    109
@@ -13189,6 +13182,13 @@ Model {
 	  SrcPort		  1
 	  DstBlock		  "MATLAB Function3"
 	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  314
+	  SrcBlock		  "MATLAB Function5"
+	  SrcPort		  1
+	  DstBlock		  "Product8"
+	  DstPort		  2
 	}
 	Annotation {
 	  SID			  "192"
@@ -13269,7 +13269,7 @@ Model {
       "9;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.07450980392"
       "15686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configuration('Tools','Plot Naviga"
       "tion',true),extmgr.Configuration('Tools','Measurements',true,'Version','2018b')),'Version','2018b','Position',[1"
-      "805 72 560 420],'VisibleAtModelOpen','on')"
+      "921 121 560 420],'VisibleAtModelOpen','on')"
       NumInputPorts	      "1"
       Floating		      off
     }
@@ -13981,7 +13981,7 @@ Model {
       "1372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.07450"
       "98039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configuration('Tools','Plot "
       "Navigation',true,'PreviousAutoscale','XY'),extmgr.Configuration('Tools','Measurements',true,'Version','2018b')),"
-      "'Version','2018b','Position',[1981 72 580 420],'VisibleAtModelOpen','on')"
+      "'Version','2018b','Position',[1981 121 580 420],'VisibleAtModelOpen','on')"
       NumInputPorts	      "1"
       Floating		      off
     }
@@ -15427,7 +15427,7 @@ Model {
       "1372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.07450"
       "98039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configuration('Tools','Plot "
       "Navigation',true,'PreviousZoomMode','ZoomX'),extmgr.Configuration('Tools','Measurements',true,'Version','2018b')"
-      "),'Version','2018b','Position',[1772 578 560 420],'VisibleAtModelOpen','on')"
+      "),'Version','2018b','Position',[1921 578 560 420],'VisibleAtModelOpen','on')"
       NumInputPorts	      "1"
       Floating		      off
     }
