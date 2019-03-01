@@ -3,9 +3,8 @@
 ## Files
 - /simulation_data: .mat and .csv files of Matlab and Gazebo simulation and scripts to create plots.
 - `*.mdl`: Simulink Model of Hexarotor, including Controllers and Trajectory Generators. Requires previous execution of `IdealParameter.m`, `viveParameter.m` or `VOParameter.m`.
-- `ParameterIdeal.m`: Script to set up model parameters, uncertainty parameters and controller gains for simulation. Assumes no uncertainties and *no errors* in state estimation.
-- `ParameterVIVE.m`: Script to set up model parameters, uncertainty parameters and controller gains for simulation. Assumes parameter uncertanties and errors of *VIVE state estimation*.
-- `ParameterVO.m`: Script to set up model parameters, uncertainty parameters and controller gains for simulation. Assumes parameter uncertainties and errors of *Visual Odometry state estimation*.
+- `Parameter.m`: Script to set up model parameters, uncertainty parameters and controller gains for simulation. 
+- `Parameter_old.m`: Old script to set up model parameters, uncertainty parameters and controller gains for simulation. 
 - `skew2vec.m` and `vec2skew.m`: Functions to convert vector to skew symmetric matrix and reverse direction.
 - `TrajectorySettings.m`: Script to set the start and target pose as well as the duration of the trajectory to be tracked. Will be executed on the start of each simulation. The back-end in the subdirectory 'feasibility_check' performs an a priori feasibility check of the given trajectory parameters and adjusts them if they lead to exceeding of the actuator boundaries.
 - `Controllability.m`: Script to calculate the rank of the controllability matrix of the linearized model.

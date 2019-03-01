@@ -1,25 +1,25 @@
-%% Define parameters for hexarotor - Visual Odometry case
+%% Define parameters for hexarotor 
 
-% sample time and delay of state estimation by Visual Odometry
-Ts = 0.03;
-T_delay = 0.1;
+% sample time and delay of state estimation
+Ts = 1/250;
+T_delay = 0.04;
 
 % DC Motor parameters
 T_rotor = 0.1;
-T_rotor_0 = 0.11;
+T_rotor_0 = 0.1; 
 T_dis_rotor = T_rotor/(T_rotor+Ts);
 z_p_0 = T_rotor_0/(T_rotor_0+Ts);
 K_0 = Ts/(T_rotor_0+Ts);
 
 % _0 : nominal values with deviation from true values
-useMeasurementNoise = true; % use errors in pose & velocity measurement
-useNominalValues = true; % use parameter uncertainties or not
+useMeasurementNoise = false; %use errors in pose & velocity measurement
+useNominalValues = false; % use parameter uncertainties or not
 
 % noise values of gaussian noise, ~3sigma
 if useMeasurementNoise
-    p_noise = 0.001; % +- in [m]
+    p_noise = 0.0003; %+- in [m]
     v_noise = sqrt(2)*p_noise/Ts; % +- in [m/s]
-    angular_noise = 0.5; % +- in degree
+    angular_noise = 0.02; % +- in degree
     omega_noise = sqrt(2)*angular_noise/Ts * pi/180; % +- in rad/s 
 else
     p_noise = 0; %+- in [m]
@@ -107,28 +107,26 @@ K_p_star = 50*eye(3);   % stiffness factor
 K_d_star = 4*eye(3);    % damping factor
 
 % K gain matrices for [Raj15] (PID)
-K_P_D = 5*eye(3);
-K_P_P = 10*eye(3);
-K_P_I = 10*eye(3);
-K_R_D = 5*eye(3);
-K_R_P = 10*eye(3); 
-K_R_I = 10*eye(3);
-
+K_P_D = 15*eye(3);
+K_P_P = 100*eye(3); 
+K_P_I = 100*eye(3);
+K_R_D = 15*eye(3);
+K_R_P = 100*eye(3); 
+K_R_I = 100*eye(3);
 
 % gain matrices for Backstepping
-K_P_1 = 2*eye(3); 
-K_P_2 = 4*eye(3); 
-K_P_3 = 6*eye(3); 
+K_P_1 = 10*eye(3); 
+K_P_2 = 10*eye(3); 
+K_P_3 = 10*eye(3); 
 
-K_R_1 = 2*eye(3);
-K_R_2 = 4*eye(3); 
-K_R_3 = 6*eye(4);
+K_R_1 = 10*eye(3); 
+K_R_2 = 10*eye(3);  
+K_R_3 = 10*eye(4); 
 
 % Sliding Mode Control
-lambda = 3; 
-lambda_rot = 3; 
-eta = 2; 
-eta_rot = 2;
-M = 6;  
-M_rot = 6; 
-
+lambda = 5; 
+lambda_rot = 5; 
+eta = 10; 
+eta_rot = 5;
+M = 5; % 
+M_rot = 1; 
