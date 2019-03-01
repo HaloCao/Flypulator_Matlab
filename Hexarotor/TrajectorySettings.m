@@ -19,9 +19,9 @@ duration = 5;
 
 % set actuator boundaries [rpm]
 % these don't necessarily correspond to the actual physical actuator boundaries
-% In this case, the upper limit is chosen to 90% of maximum throttle (5700
+% In this case, the upper limit is chosen to 90% of maximum throttle (6300
 % rpm).
-traj_rot_vel_max = 5130;
+traj_rot_vel_max = 6300*0.9;
 traj_rot_vel_min = 600;
 
 % set path of computation back-end

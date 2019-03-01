@@ -8,7 +8,7 @@ function[feasible, exceeded_limit, indices] = within_actuator_boundaries(rot_vel
 % Input values:
 %   rot_vel: rotor velocities per [rpm]
 
-% load actuator bounderies
+% load actuator bounderies and transfer to rad/s
 upperLimit = (evalin('base', 'traj_rot_vel_max') * pi/30)^2;
 lowerLimit = (evalin('base', 'traj_rot_vel_min')* pi/30)^2;
 
