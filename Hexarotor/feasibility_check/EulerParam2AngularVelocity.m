@@ -43,8 +43,8 @@ dR_IB = R_IA * dR_AB;
 ddR_IB = R_IA * ddR_AB;
 
 % omega and domega skew matrices
-omega_skew = dR_IB * R_IB';
-domega_skew = ddR_IB * R_IB' + dR_IB * dR_IB';
+omega_skew = R_IB' * dR_IB;
+domega_skew = dR_IB' * dR_IB +  R_IB' * ddR_IB;
 
 % retrieve omega and domega components
 omega = [omega_skew(3,2);

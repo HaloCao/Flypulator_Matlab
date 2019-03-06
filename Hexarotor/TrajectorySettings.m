@@ -32,6 +32,16 @@ addpath('feasibility_check');
 
 %set initial conditions within the integrators of the motion equation
 %subsystem
-set_param('pose_ctrl_with_traj_check/Motion Equations, p_I/Integrator3', 'InitialCondition', mat2str(start_pose(1:3)'));
-set_param('pose_ctrl_with_traj_check/Motion Equations, p_I/Integrator4', 'InitialCondition', mat2str(start_ori));
-set_param('pose_ctrl_with_traj_check', 'StopTime', num2str(duration + t_start + 5));
+try
+    set_param('pose_ctrl_with_traj_check/Motion Equations, p_I/Integrator3', 'InitialCondition', mat2str(start_pose(1:3)'));
+    set_param('pose_ctrl_with_traj_check/Motion Equations, p_I/Integrator4', 'InitialCondition', mat2str(start_ori));
+    set_param('pose_ctrl_with_traj_check', 'StopTime', num2str(duration + t_start + 5));
+catch exception
+end
+
+try
+    set_param('pose_ctrl_with_traj_check_R2017a/Motion Equations, p_I/Integrator3', 'InitialCondition', mat2str(start_pose(1:3)'));
+    set_param('pose_ctrl_with_traj_check_R2017a/Motion Equations, p_I/Integrator4', 'InitialCondition', mat2str(start_ori));
+    set_param('pose_ctrl_with_traj_check_R2017a', 'StopTime', num2str(duration + t_start + 5));
+catch exception
+end
