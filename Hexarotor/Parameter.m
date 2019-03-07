@@ -54,10 +54,10 @@ Ip = [Ipx 0 0; 0 Ipy 0; 0 0 Ipz];   % propeller inertia
 % Im_0 = Im;
 
 % Propeller constants
-% k = 0.00447444; % N/(rad/s)^2
-% b = k/50; % Nm/(rad/s)^2
-k = 5.6e-05; % old parameter
-b = 1.1e-06; % old parameter
+k = 4.472e-05; % N/(rad/s)^2
+b = k/50; % Nm/(rad/s)^2
+% k = 5.6e-05; % old parameter
+% b = 1.1e-06; % old parameter
 
 % actuator boundaries [(rad/s)^2]
 rot_vel_max = (6300 * pi/30)^2; % 6300 rpm
