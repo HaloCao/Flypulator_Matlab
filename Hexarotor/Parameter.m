@@ -6,7 +6,8 @@
 % 1: ideal case, without delay and noise
 % 2: VIVE case, delay and noise of VIVE tracking system
 % 3: VO case, delay and noise of Visual Odometry
-measurementNoise = 1;
+% 4£º zero-moment direction control,hovering at purpose point.
+measurementNoise = 4;
 useNominalValues = false; % true if using parameter uncertainties
 
 %% Measurement parameters
@@ -32,8 +33,15 @@ switch measurementNoise
         v_noise = sqrt(2)*p_noise/Ts; % +- in [m/s]
         angular_noise = 0.5; % +- in degree
         omega_noise = sqrt(2)*angular_noise/Ts * pi/180; % +- in rad/s 
+    case 4 % zero moment_direction
+       Ts = 1/250;
+        T_delay = 0.04;
+        p_noise = 6.4e-4; %+- in [m]
+        v_noise =  1.4e-3; % +- in [m/s]
+        angular_noise =0.5; % +- in degree
+        omega_noise = 2.7e-3; % +- in rad/s 
     otherwise
-        error('Test case undefined! Ideal case:1, VIVE case:2, VO case: 3.');
+        error('Test case undefined! Ideal case:1, VIVE case:2, VO case: 3., zero-moment direction case: 4.');
 end
 
 %% UAV model parameters
@@ -215,8 +223,15 @@ switch measurementNoise
         eta_rot = 2;
         M = 6;  
         M_rot = 6;  
+        
+    case 4 % zero-moment direction
+        K_pp=6 ;
+        K_pd=8 ;
+        K_z=5;
+        K_ap=2;
+        K_ad=4;
     otherwise
-        error('Test case undefined! Ideal case:1, VIVE case:2, VO case: 3.');
+        error('Test case undefined! Ideal case:1, VIVE case:2, VO case: 3, zero-moment direction case: 4.');
 end
 
 
