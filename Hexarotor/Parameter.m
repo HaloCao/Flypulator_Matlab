@@ -39,7 +39,8 @@ switch measurementNoise
         p_noise = 6.4e-4; %+- in [m]
         v_noise =  1.4e-3; % +- in [m/s]
         angular_noise =0.5; % +- in degree
-        omega_noise = 2.7e-3; % +- in rad/s 
+        omega_noise = 2.7e-3; % +- in rad/s
+       
     otherwise
         error('Test case undefined! Ideal case:1, VIVE case:2, VO case: 3., zero-moment direction case: 4.');
 end
@@ -225,11 +226,17 @@ switch measurementNoise
         M_rot = 6;  
         
     case 4 % zero-moment direction
-        K_pp=6 ;
-        K_pd=8 ;
-        K_z=5;
-        K_ap=2;
-        K_ad=4;
+        K_pp=4 ;  % P regler for translation control,drive e_p e_v to zero.
+        K_pd=8 ;  % D regler for translation control,drive e_p e_v to zero.
+        K_z=15;   % regler for force and angula veloity control, drive f_del to zero.
+        K_ap=2;   % P regler for orientation control,drive q to q_d, w to w_d.
+        K_ad=4;   % D regler for orientation control,drive q to q_d, w to w_d.
+        K_q=4;    % regler for orientation. drive q_d to q_r.
+        a=10*pi/180;  % spin angle , to generate the purpose orientation
+        ca=cos(a/2);
+        sa=sin(a/2);
+        u=[0.1 0.1 1]'; % spin achse, to generate the purpose orientation
+        p_d=[0.2 0.5 0.8]'; % purpose position
     otherwise
         error('Test case undefined! Ideal case:1, VIVE case:2, VO case: 3, zero-moment direction case: 4.');
 end
