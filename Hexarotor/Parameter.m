@@ -6,8 +6,7 @@
 % 1: ideal case, without delay and noise
 % 2: VIVE case, delay and noise of VIVE tracking system
 % 3: VO case, delay and noise of Visual Odometry
-% 4£º zero-moment direction control,hovering at purpose point.
-measurementNoise = 4;
+measurementNoise = 1;
 useNominalValues = false; % true if using parameter uncertainties
 
 %% Measurement parameters
@@ -33,16 +32,10 @@ switch measurementNoise
         v_noise = sqrt(2)*p_noise/Ts; % +- in [m/s]
         angular_noise = 0.5; % +- in degree
         omega_noise = sqrt(2)*angular_noise/Ts * pi/180; % +- in rad/s 
-    case 4 % zero moment_direction
-       Ts = 1/250;
-        T_delay = 0.04;
-        p_noise = 6.4e-4; %+- in [m]
-        v_noise =  1.4e-3; % +- in [m/s]
-        angular_noise =0.5; % +- in degree
-        omega_noise = 2.7e-3; % +- in rad/s
+
        
     otherwise
-        error('Test case undefined! Ideal case:1, VIVE case:2, VO case: 3., zero-moment direction case: 4.');
+        error('Test case undefined! Ideal case:1, VIVE case:2, VO case: 3.');
 end
 
 %% UAV model parameters
@@ -163,6 +156,14 @@ switch measurementNoise
         M = 100; 
         M_rot = 15; 
         
+        % zero-moment direction
+        K_pp=4 ;
+        K_pd=8 ;
+        K_z=15;
+        K_ap=2;
+        K_ad=4;
+        K_q=4;
+        
     case 2  % VIVE
         % model based impedance control
         M_star = m_0*eye(3);    % mass
@@ -193,6 +194,14 @@ switch measurementNoise
         eta_rot = 5;
         M = 5; % 
         M_rot = 1; 
+        
+        % zero-moment direction
+        K_pp=4 ;
+        K_pd=8 ;
+        K_z=15;
+        K_ap=2;
+        K_ad=4;
+        K_q=4;
         
     case 3  % OV
         % model based impedance control
@@ -225,20 +234,17 @@ switch measurementNoise
         M = 6;  
         M_rot = 6;  
         
-    case 4 % zero-moment direction
-        K_pp=4 ;  % P regler for translation control,drive e_p e_v to zero.
-        K_pd=8 ;  % D regler for translation control,drive e_p e_v to zero.
-        K_z=15;   % regler for force and angula veloity control, drive f_del to zero.
-        K_ap=2;   % P regler for orientation control,drive q to q_d, w to w_d.
-        K_ad=4;   % D regler for orientation control,drive q to q_d, w to w_d.
-        K_q=4;    % regler for orientation. drive q_d to q_r.
-        a=10*pi/180;  % spin angle , to generate the purpose orientation
-        ca=cos(a/2);
-        sa=sin(a/2);
-        u=[0.1 0.1 1]'; % spin achse, to generate the purpose orientation
-        p_d=[0.2 0.5 0.8]'; % purpose position
+        % zero-moment direction
+        K_pp=4 ;
+        K_pd=8 ;
+        K_z=15;
+        K_ap=2;
+        K_ad=4;
+        K_q=4;
+        
+
     otherwise
-        error('Test case undefined! Ideal case:1, VIVE case:2, VO case: 3, zero-moment direction case: 4.');
+        error('Test case undefined! Ideal case:1, VIVE case:2, VO case: 3.');
 end
 
 
