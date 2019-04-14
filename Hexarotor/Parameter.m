@@ -157,18 +157,20 @@ switch measurementNoise
         M_rot = 15; 
         
         % zero-moment direction
-        K_pp=4 ;
+        K_pp=20 ;
+        K_pi=1;
         K_pd=8 ;
         K_z=15;
-        K_ap=2;
+        K_ap=20;
+        K_ai=1;
         K_ad=4;
         K_q=4;
         
     case 2  % VIVE
         % model based impedance control
         M_star = m_0*eye(3);    % mass
-        K_p_star = 50*eye(3);   % stiffness factor
-        K_d_star = 4*eye(3);    % damping factor
+        K_p_star = 30*eye(3);   % stiffness factor
+        K_d_star = 10*eye(3);    % damping factor
 
         % K gain matrices for [Raj15] (PID)
         K_P_D = 15*eye(3);
@@ -196,10 +198,12 @@ switch measurementNoise
         M_rot = 1; 
         
         % zero-moment direction
-        K_pp=4 ;
+        K_pp=20 ;
+        K_pi=1;
         K_pd=8 ;
         K_z=15;
-        K_ap=2;
+        K_ap=20;
+        K_ai=1;
         K_ad=4;
         K_q=4;
         
@@ -235,10 +239,12 @@ switch measurementNoise
         M_rot = 6;  
         
         % zero-moment direction
-        K_pp=4 ;
+        K_pp=20 ;
+        K_pi=1;
         K_pd=8 ;
         K_z=15;
-        K_ap=2;
+        K_ap=20;
+        K_ai=1;
         K_ad=4;
         K_q=4;
         
