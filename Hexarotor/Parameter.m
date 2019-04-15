@@ -6,7 +6,7 @@
 % 1: ideal case, without delay and noise
 % 2: VIVE case, delay and noise of VIVE tracking system
 % 3: VO case, delay and noise of Visual Odometry
-measurementNoise = 1;
+measurementNoise = 2;
 useNominalValues = false; % true if using parameter uncertainties
 
 %% Measurement parameters
@@ -158,7 +158,7 @@ switch measurementNoise
         
         % zero-moment direction
         K_pp=20 ;
-        K_pi=1;
+        K_pi=10;
         K_pd=8 ;
         K_z=15;
         K_ap=20;
@@ -199,7 +199,7 @@ switch measurementNoise
         
         % zero-moment direction
         K_pp=20 ;
-        K_pi=1;
+        K_pi=10;
         K_pd=8 ;
         K_z=15;
         K_ap=20;
@@ -239,8 +239,8 @@ switch measurementNoise
         M_rot = 6;  
         
         % zero-moment direction
-        K_pp=20 ;
-        K_pi=1;
+       K_pp=20 ;
+        K_pi=10;
         K_pd=8 ;
         K_z=15;
         K_ap=20;

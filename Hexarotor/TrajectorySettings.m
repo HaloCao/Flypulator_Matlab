@@ -10,7 +10,7 @@
 % start pose/end pose: [x[m] y[m] z[m] roll[�] pitch[�] yaw[�]]
 % duration [s]
 
-t_start = 5;
+t_start = 0;
 start_pose = [0 0  10  0  0  0];
 target_pose = [5 10 20 0 2 36];
 duration = 5;
