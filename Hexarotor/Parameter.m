@@ -77,9 +77,9 @@ g = 9.81; % gravity
 deltah =-0.0427;
 
 % Motor tilt angles
-alpha_i = pi/180 * 13.6;
-alpha = [-alpha_i;alpha_i;-alpha_i;alpha_i;-alpha_i;alpha_i];
-beta_i = pi/180 * 10.6;
+alpha_i = pi/180 * 30;  % 13.6
+alpha = [alpha_i;-alpha_i;alpha_i;-alpha_i;alpha_i;-alpha_i];
+beta_i = pi/180 * 0;    % 10.6
 beta = [beta_i; beta_i; beta_i; beta_i; beta_i; beta_i];
 % beta = [beta_i; -beta_i; beta_i; -beta_i; beta_i; -beta_i];
 S=[1,0,0;0,1,0;0,0,1];
