@@ -6,7 +6,7 @@
 % 1: ideal case, without delay and noise
 % 2: VIVE case, delay and noise of VIVE tracking system
 % 3: VO case, delay and noise of Visual Odometry
-measurementNoise = 2;
+measurementNoise = 1;
 useNominalValues = false; % true if using parameter uncertainties
 
 %% Measurement parameters
@@ -19,7 +19,7 @@ switch measurementNoise
         angular_noise = 0; % 3sigma value for attitude measurement noise in degree
         omega_noise = 0; % 3sigma value for angular velocity measurement noise in rad/s
     case 2  % VIVE
-        Ts = 1/250;
+         Ts = 1/250;
         T_delay = 0.04;
         p_noise = 0.0003; %+- in [m]
         v_noise = sqrt(2)*p_noise/Ts; % +- in [m/s]
@@ -32,7 +32,6 @@ switch measurementNoise
         v_noise = sqrt(2)*p_noise/Ts; % +- in [m/s]
         angular_noise = 0.5; % +- in degree
         omega_noise = sqrt(2)*angular_noise/Ts * pi/180; % +- in rad/s 
-
        
     otherwise
         error('Test case undefined! Ideal case:1, VIVE case:2, VO case: 3.');
@@ -157,14 +156,18 @@ switch measurementNoise
         M_rot = 15; 
         
         % zero-moment direction
-        K_pp=20 ;
-        K_pi=10;
+        K_pp=60 ;
+        K_pi=0;
         K_pd=8 ;
         K_z=15;
-        K_ap=20;
-        K_ai=1;
-        K_ad=4;
-        K_q=4;
+        K_ap=40;
+        K_ai=0;
+        K_ad=10;
+        K_q=5;
+
+
+
+
         
     case 2  % VIVE
         % model based impedance control
@@ -198,14 +201,15 @@ switch measurementNoise
         M_rot = 1; 
         
         % zero-moment direction
-        K_pp=20 ;
-        K_pi=10;
+        K_pp=10 ;
+        K_pi=1;
         K_pd=8 ;
         K_z=15;
-        K_ap=20;
-        K_ai=1;
-        K_ad=4;
+        K_ap=10;
+        K_ai=10;
+        K_ad=1;
         K_q=4;
+
         
     case 3  % OV
         % model based impedance control
@@ -239,15 +243,16 @@ switch measurementNoise
         M_rot = 6;  
         
         % zero-moment direction
-       K_pp=20 ;
-        K_pi=10;
-        K_pd=8 ;
-        K_z=15;
-        K_ap=20;
+     
+        K_pp=10 ;
+        K_pi=1;
+        K_pd=5 ;
+        K_z=1;
+        K_ap=5;
         K_ai=1;
-        K_ad=4;
+        K_ad=1;
         K_q=4;
-        
+
 
     otherwise
         error('Test case undefined! Ideal case:1, VIVE case:2, VO case: 3.');
